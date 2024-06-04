@@ -1,0 +1,53 @@
+@charset "utf-8";
+body {
+    background-color: #ddd;
+    padding: 25px 70px; /* Var 적용 */
+}
+
+/****** header ******/
+.allPage-header {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    /* background-color: #000; */
+
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper {
+    height: 26px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.allPage-header .pc-main-nav .menu-wrapper .menu {
+    width: 64px; height: 26px;
+    padding: 3px;
+    background-color: #666666;
+    border-radius: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item1, .menu-item2 {
+    width: 26px; height: 26px;
+    background-color: #666666;
+    border-radius: 50px;
+}
+.allPage-header .pc-main-nav .menu-wrapper .menu-item1 img{
+    width: 26px;
+}
+.allPage-header .pc-main-nav .menu-wrapper .menu-item2 img{
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****** index-main ******/
+.index-main .list-wrapper {
+   display: flex;
+   align-content: center; 
+}
