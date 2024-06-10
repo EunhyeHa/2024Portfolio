@@ -28,6 +28,7 @@
   <script src="./assets/Js/jquery-ui.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/Js/global.js" defer></script>
+  <script src="./menu.js" defer></script>
 
   <!-- 이벤트 -->
 </head>
@@ -41,6 +42,10 @@
 
 -->
 <body>
+  <div class="frame-effect" id="frameEffect">
+    <img src="여기에 메인 영상" alt="메인영상">
+  </div>
+
   <!-- mouseEmoji -->
 
   <!------- header ------->
@@ -48,11 +53,15 @@
     <!----- nav ----->
     <nav class="pc-main-nav">
       <ul class="menu-wrapper">
+        <!-- menu -->
         <li class="menu"><a href="./menu.html">menu</a></li>
+
+        <!-- logo -->
         <li class="menu-logo"><a href="./index.html"><img src="./assets/images/global/logo.png" alt="logo"></a></li>
 
+        <!-- right-top -->
         <div class="menu-item">
-          <li class="menu-item1"><a href=""><img src="./assets/images/global/icon-github-w.png" alt="gihub"></a></li>
+          <li class="menu-item1"><a href="">GitHub</a></li>
           <li class="menu-item2"><a href=""><img src="./assets/images/global/icon-mail-w.png" alt="email"></a></li>
         </div>
       </ul>
@@ -63,10 +72,9 @@
   <section class="menu-main">
     <div class="menu-wrapper">
       <div class="menu-inner1">
-        <ul>
-          <li>About Me</li>
-          <li>Career</li>
-          <li>작업 일지</li>
+        <ul class="hover-underline-menu">
+          <li class="hover-effect"><a href="./about.html">About Me</a></li>
+          <li class="hover-effect"><a href="https://github.com/EunhyeHa/2024Portfolio" target="_blank">작업일지</a></li>
         </ul>
       </div>
 
@@ -75,25 +83,27 @@
           <li>Works</li>
           <li class="pj1"><a href="./works/adererror.html">Adererror</a></li>
           <li class="pj2"><a href="./works/artbodagallery.html">ARTBODA Gallery</a></li>
-          <li class="pj3"><a href="./works/개인프로젝트.html">개인프로젝트</a></li>
-          <li class="pj4"><a href="./works/connet.html">CONNET</a></li>
-          <li class="pj5"><a href="./works/fifeet.html">FIFFET</a></li>
+          <li class="pj3"><a href="./works/개인프로젝트.html">CONNET</a></li>
+          <li class="pj4"><a href="./works/connet.html">FIFEET</a></li>
+          <li class="pj5"><a href="./works/fifeet.html">개인프로젝트</a></li>
         </ul>
       </div>
     </div>
+  </section>
 
-    <div class="menu-box">
-      <div class="menu-box1">
+  <!------ menu-side ------>
+  <section class="menu-side">
+    <div class="side-wrapper">
+      <div class="side-inner1">
         <h1>Main Video Story</h1>
         <video src=""></video>
       </div>
-      <div class="menu-box2">
+      <div class="side-inner2">
         <h1>Contact Me</h1>
         <p>grace9695@naver.com</p>
       </div>
     </div>
-
   </section>
-</body>
 
+</body>
 </html>

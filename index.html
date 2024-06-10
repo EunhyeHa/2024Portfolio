@@ -1,113 +1,177 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
   <title>index</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
-    <!------ favicon ------>
-    <!-- open graph -->
-  
-    <!------ reset ------>
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-  
-    <!------ font ------>
-    <link rel="stylesheet" href="./assets/styles/pretendard.css">
-    <link rel="stylesheet" href="./assets/styles/poppins.css">
-  
-    <!------ style ------>
-    <!-- z-index 꼭 확인!!!!! -->
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-  
-    <!------ jQuery ------>
-    <script src="./assets/Js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/Js/jquery-ui.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="./assets/Js/global.js" defer></script>
-    <script src="./index.js" defer></script> -->
-  
-    <!-- 이벤트 -->
+  <!------ favicon ------>
+  <!-- open graph -->
+
+  <!------ reset ------>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!------ font ------>
+  <link rel="stylesheet" href="./assets/styles/pretendard.css">
+  <link rel="stylesheet" href="./assets/styles/poppins.css">
+
+  <!------ style ------>
+  <!-- z-index 꼭 확인!!!!! -->
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+
+  <!------ jQuery ------>
+  <script src="./assets/Js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/Js/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/Js/global.js" defer></script>
+  <script src="./index.js" defer></script>
+
+  <!-- 이벤트 -->
 </head>
 
-<body>
-  <!------ Loading ------>   
-  <!-- mouseEmoji -->
+<!-- To Do List
+***** 집
+- 메뉴 이미지 다시 적용 ㅜㅜ
 
-  <!------- header ------->
+
+***** (월) 가자마자 *****
+1. 깃 푸쉬
+2. about 페이지 마무리
+3. 서브프젝 2개 웹/앱 피그마 작업
+4. 팀프로젝트용 레이아웃 작업
+
+about
+- 헤더 색상 변경
+- 제목-요소에 임시사진넣기
+
+global
+- go-to-up
+- 메일 아이콘 > get in touch
+- mouse emoji
+- footer : 적용할 페이지 리스트업
+
+index
+- 배경영상 초안 / 레퍼 서치
+- 괄호 안에 텍스트
+
+menu
+- 프레임 이벤트 : 
+- 메뉴 hover > close 버튼
+
+get in touch
+- 페이지 만들기
+
+connet, fifeet 웹/앱
+- 피그마에서 디자인 작업
+
+-->
+  
+<body>
+  <!-- 주석 5개, 3개, 기본 -->
+  <!------ Loading ------>
+  <!--- mouseEmoji --->
+
+  <!----- header ----->
   <header class="allPage-header">
-    <!----- nav ----->      
+    <!----- nav ----->
     <nav class="pc-main-nav">
       <ul class="menu-wrapper">
         <li class="menu"><a href="./menu.html">menu</a></li>
         <li class="menu-logo"><a href="./index.html"><img src="./assets/images/global/logo.png" alt="logo"></a></li>
-        
+
         <div class="menu-item">
-        <li class="menu-item1"><a href=""><img src="./assets/images/global/icon-github-w.png" alt="gihub"></a></li>
-        <li class="menu-item2"><a href=""><img src="./assets/images/global/icon-mail-w.png" alt="email"></a></li>
+          <li class="menu-item1"><a href="">GitHub</a></li>
+          <li class="menu-item2"><a href=""><img src="./assets/images/global/icon-mail-w.png" alt="email"></a></li>
         </div>
       </ul>
     </nav>
   </header>
-
-  <!-- 
-  배경이미지 + 프로젝트 설명 부분
-  1. 자바스크립트 이용해야한다..ㅎ
-  2. addclass, removeclass 이용
-  3. show, hide 활용 display: none
-  4. 배경 이미지 바뀌는 것은 css에서 배경이미지로 조정
-  -->
-
-  <!------- index-main ------->
+  
+  <!----- index-main ----->
   <section class="index-main">
     <div class="list-wrapper">
     <ul>
       <li>Works</li>
-      <li class="pj1"><a href="./works/adererror.html">Adererror</a></li>
-      <div class="index-project1">
-        <h1>ADERERROR</h1>
-        <h2>UIUX Design, Web Publishing</h2>
-        <p>패션 브랜드 Adererror의 웹사이트 리뉴얼 및 새로운 컨셉을 녹인 웹 퍼블리싱</p>
-    
-        <div class="pj1-img">
-          <img src="./assets/images/index/index-pj1-img.jpg" alt="pj1">
-        </div>
-      </div>
-      <li class="pj2"><a href="./works/artbodagallery.html">ARTBODA Gallery</a></li>
-      <li class="pj3"><a href="./works/개인프로젝트.html">개인프로젝트</a></li>
-      <li class="pj4"><a href="./works/connet.html">CONNET</a></li>
-      <li class="pj5"><a href="./works/fifeet.html">FIFFET</a></li>
+      <li class="pj1"><a href="">Adererror</a></li>
+      <li class="pj2"><a href="">ARTBODA Gallery</a></li>
+      <li class="pj3"><a href="">CONNET</a></li>
+      <li class="pj4"><a href="">FIFFET</a></li>
+      <li class="pj5"><a href="">개인 프로젝트</a></li>
     </ul>
     </div>
 
-    <h1>What I Make</h1>
-    <h2>(   Website   )</h1>
-    <p>바다를 헤엄치는 파도처럼, 이야기를 만드는 웹 퍼블리셔 하은혜입니다. 저의 이야기가 담긴 이 홈페이지를 통해 프로젝트에 담긴 다양한 이야기를 지금 바로 만나보세요.</p>
-    
-    <!-- project 1 -->
-    <div class="index-project1">
-      <h1>ADERERROR</h1>
-      <h2>UIUX Design, Web Publishing</h2>
-      <p>패션 브랜드 Adererror의 웹사이트 리뉴얼 및 새로운 컨셉을 녹인 웹 퍼블리싱</p>
-  
-      <div class="pj1-img">
-        <img src="./assets/images/index/index-pj1-img.jpg" alt="pj1">
-      </div>
-    </div>
-
-  </section>
-
-  <!------- index-project ------->
-  <!-- project 1 -->
-  <!-- <section class="index-project1">
-    <h1>ADERERROR</h1>
-    <h2>UIUX Design, Web Publishing</h2>
-    <p>패션 브랜드 Adererror의 웹사이트 리뉴얼 및 새로운 컨셉을 녹인 웹 퍼블리싱</p>
-
+  <!----- index-project ----->
+  <!-- project 1 -->  
+  <div class="index-project1">
     <div class="pj1-img">
       <img src="./assets/images/index/index-pj1-img.jpg" alt="pj1">
     </div>
-  </section> -->
+    <h1>ADERERROR</h1>
+    <h2>UIUX Design, Web Publishing</h2>
+    <p>패션 브랜드 Adererror의 웹사이트 리뉴얼 프로젝트. 브랜드의 아이덴티티를 더 적극적으로 표현하고, 다양한 컨텐츠를 소개합니다.</p>
+  </div>
+
+  <!-- project 2 -->  
+  <div class="index-project2">
+    <div class="pj2-img">
+      <img src="./assets/images/index/index-pj2-img2.jpg" alt="pj2">
+    </div>
+    <h1>ARTBODA Gallery</h1>
+    <h2>UIUX Design</h2>
+    <p>아트보다 갤러리의 앱 버전 디자인.</p>
+  </div>
+
+  <!-- project 3 -->  
+  <div class="index-project3">
+    <div class="pj3-img">
+      <img src="./assets/images/index/index-pj3-img.jpg" alt="pj3">
+    </div>
+    <h1>CONNET</h1>
+    <h2>BX Design, UIUX, Web Publishing</h2>
+    <p>덕후 생활을 더욱 풍요롭게! 웹툰 소셜 서비스 플랫폼 코넷, 모든 웹덕을 위한 브랜드입니다.</p>
+  </div>
+
+  <!-- project 4 -->  
+  <div class="index-project4">
+    <div class="pj4-img">
+      <img src="./assets/images/index/index-pj4-img.jpg" alt="pj4">
+    </div>
+    <h1>FIFEET</h1>
+    <h2>Brand Experience, Web Publishing</h2>
+    <p>전부 다른 모양의 발을 가진 우리, 나에게 딱 맞는 신발만 구매할 수 있다면 어떨까요? 피핏은 개인 신발 매칭 서비스를 제공합니다.</p>
+  </div>
+
+  <!-- project 5 -->  
+  <div class="index-project5">
+    <div class="pj5-img">
+      <img src="./assets/images/index/" alt="pj5">
+    </div>
+    <h1>개인프로젝트</h1>
+    <h2>Web Publishing</h2>
+    <p>개인 프로젝트 웹 퍼블리싱 프로젝트.</p>
+  </div>
+  
+</section>
+
+  <!----- index-main-text ----->
+  <section class="index-txt">
+    <h1>What I Make</h1>
+    <!-- <h2 class="flip-space">()</h2> -->
+    <h2>
+      <span id="flipper" class="flip">
+        <span class="step step0 set">Website</span>
+        <span class="step step1">Brand</span>
+        <span class="step step2">Application</span>
+        <span class="step step3">Story</span>
+        <span class="step step4">Dreams</span>
+        <span class="step step5">Flow</span>
+        <span class="step step6">Anything</span>
+    </span>
+    </h2>
+    <p>바다를 헤엄치는 파도처럼, 이야기를 만드는 웹 퍼블리셔 하은혜입니다. 저의 이야기가 담긴 포트폴리오를 통해 프로젝트에 담긴 다양한 이야기를 지금 바로 만나보세요.</p>
+  </section>
+
 </body>
 </html>

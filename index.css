@@ -1,30 +1,40 @@
 @charset "utf-8";
 body {
     font-family: 'poppins', sans-serif;
-    background-color: #000;
 }
 
 /****** index-main ******/
 .index-main {
     height: 100vh;
     padding: 0 70px;
+    background: url(./assets/images/index/index-main-bgImg.jpg) no-repeat 100% / cover;
 
     position: relative;
     display: flex;
     align-items: center;
+    transition: background-image 0.5s ease-in-out;
 }
+
+/* index-main-list */
 .index-main .list-wrapper {
     font-size: 15px;
     color: #fff;
 
-    position: fixed;
+    position: relative;
+    z-index: 2;
 }
-
+.index-main .list-wrapper ul {
+    display: flex;
+    flex-direction: column;
+}
 .index-main .list-wrapper ul li:not(:first-child) {
+    max-width: fit-content; /* 텍스트 길이에 맞도록 */
+    align-self: flex-start;
     height: 35px;
     margin-top: 10px;
-    padding: 8px 18px;
+    padding: 5px 18px;
     text-align: left;
+    letter-spacing: 0.5px;
     border: rgba(128, 128, 128, 0.1) solid 1px;
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 30px;
@@ -34,23 +44,386 @@ body {
     background-color: transparent;
 }
 
-.index-main h1 {
-    font-size: 80px;
-    font-weight: 600;
-    color: #fff;
+
+/****** index-project ******/
+/*** project 1 - Adererror ***/
+.index-project1 {
+    opacity: 0;
+    visibility: hidden;
+    background: url(./assets/images/index/index-main-pj1.jpg) no-repeat 50% / cover ;
+
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    
+    /* list 밑으로!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    z-index: 1;
+}
+.index-project1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.index-project1 .pj1-img img {
+    width: 750px;
+    border-radius: 10px;
+    position: absolute;
+    top: 13vh;
+    left: 50vw;
+}
+.index-project1 h1,
+.index-project1 h2,
+.index-project1 p {
+    position: absolute;
+    color: #ffffff;
+}
+.index-project1 h1 {
+    font-weight: 600;
+    font-size: 75px;
     top: 65vh;
+    left: 20vw;
+}
+.index-project1 h2 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    top: 25vh;
     left: 35vw;
 }
-.index-main h2 {
+.index-project1 p {
+    width: 265px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 73vh;
+    left: 70vw;
+}
+
+/*** project 2 - ARTBODA Gallery ***/
+.index-project2 {
+    opacity: 0;
+    visibility: hidden;
+    background: url(./assets/images/index/index-main-pj2.jpg) no-repeat 40% 60% / cover ;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    
+    /* list 밑으로!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    z-index: 1;
+}
+.index-project2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.index-project2 .pj2-img {
+    width: 590px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 45vh;
+    left: 18vw; 
+}
+.index-project2 .pj2-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(2.2) translateY(25px) translateX(5px);
+}
+.index-project2 h1,
+.index-project2 h2,
+.index-project2 p {
+    position: absolute;
+    color: #ffffff;
+}
+.index-project2 h1 {
+    font-weight: 600;
+    font-size: 75px;
+    top: 53vh;
+    left: 55vw;
+}
+.index-project2 h2 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    top: 70vh;
+    left: 60vw;
+}
+.index-project2 p {
+    width: 265px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 25vh;
+    left: 37vw;
+}
+
+/*** project 3 - CONNET ***/
+.index-project3 {
+    opacity: 0; 
+    visibility: hidden;
+    background: url(./assets/images/index/index-main-pj3.jpg) no-repeat 40% 50% / cover ;
+
+    background-color: #034a50; /* 임시 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    
+    /* list 밑으로!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    z-index: 1;
+}
+.index-project3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.index-project3 .pj3-img img {
+    width: 750px;
+    border-radius: 10px;
+    position: absolute;
+    top: 13vh;
+    left: 50vw;
+}
+.index-project3 h1,
+.index-project3 h2,
+.index-project3 p {
+    position: absolute;
+    color: #ffffff;
+}
+.index-project3 h1 {
+    font-weight: 600;
+    font-size: 75px;
+    top: 65vh;
+    left: 20vw;
+}
+.index-project3 h2 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    top: 25vh;
+    left: 35vw;
+}
+.index-project3 p {
+    width: 265px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 73vh;
+    left: 70vw;
+}
+
+/*** project 4 - FiFEET ***/
+.index-project4 {
+    opacity: 0; 
+    visibility: hidden;
+    background: url(./assets/images/index/index-main-pj4.jpg) no-repeat 50% 55% / cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    
+    /* list 밑으로!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    z-index: 1;
+}
+.index-project4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.index-project4 .pj4-img {
+    width: 480px; height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 40vh;
+    left: 65vw;
+}
+.index-project4 .pj4-img img {
+    width: 100%; height: auto;
+    transform: translateY(-80px);
+}
+.index-project4 h1,
+.index-project4 h2,
+.index-project4 p {
+    position: absolute;
+    color: #ffffff;
+}
+.index-project4 h1 {
+    font-weight: 600;
+    font-size: 75px;
+    top: 52vh;
+    left: 25vw;
+}
+.index-project4 h2 {
+    width: 165px;
+    font-size: 18px;
+    font-weight: 500;
+    top: 40vh;
+    left: 53vw;
+}
+.index-project4 p {
+    width: 265px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 20vh;
+    left: 40vw;
+}
+
+/*** project 5 - 미정 ***/
+.index-project5 {
+    opacity: 0;
+    visibility: hidden;
+    background: url(./assets/images/index/) no-repeat 40% 60% / cover;
+    background-color: tomato;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    
+    /* list 밑으로!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    z-index: 1;
+}
+.index-project5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.index-project5 .pj5-img {
+    width: 590px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 45vh;
+    left: 18vw; 
+}
+.index-project5 .pj5-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(2.2) translateY(25px) translateX(5px);
+}
+.index-project5 h1,
+.index-project5 h2,
+.index-project5 p {
+    position: absolute;
+    color: #ffffff;
+}
+.index-project5 h1 {
+    font-weight: 600;
+    font-size: 75px;
+    top: 53vh;
+    left: 55vw;
+}
+.index-project5 h2 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    top: 70vh;
+    left: 60vw;
+}
+.index-project5 p {
+    width: 265px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 25vh;
+    left: 37vw;
+}
+
+
+/****** index-main-text ******/
+.index-txt h1 {
     font-size: 80px;
     font-weight: 600;
     color: #fff;
     position: absolute;
-    top: 75vh;
-    left: 45vw;
+    top: 60vh;
+    left: 32vw;
 }
-.index-main p {
+
+/*** flip animation ***/
+/* .index-txt .flip-space {
+    letter-spacing: 500px;
+    position: absolute;
+    top: 70vh;
+    left: 40vw;
+
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+} */
+.index-txt h2 {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    perspective: 500px;
+
+    position: absolute;
+    top: 65vh;
+    left: 50vw;
+}
+.flip {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 40px;
+}
+.flip span {
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    transition: transform 1.2s, opacity 0.3s;
+    opacity: 0;
+    transform: rotateX(90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.flip .set {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.flip .down {
+    opacity: 0;
+    transform: rotateX(-90deg);
+}
+
+.index-txt p {
     width: 270px;
     font-size: 16px;
     line-height: 1.5;
@@ -59,53 +432,4 @@ body {
     position: absolute;
     top: 25vh;
     left: 60vw;
-}
-
-/****** index-project ******/
-/* project 1 */
-.index-project1 {
-    width: 100%;;
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* transform: translate(0%, 0%); */
-    background-color: #fff;
-
-    z-index: 999999;
-}
-.pj1:hover ~ .index-project1 {
-    display: block;
-}
-.index-project1 h1 {
-    font-size: 80px;
-    color: #ffffff;
-    position: absolute;
-    top: 65vh;
-    left: 20vw;
-}
-.index-project1 h2 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    position: absolute;
-    top: 25vh;
-    left: 35vw;
-}
-.index-project1 p {
-    width: 270px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    position: absolute;
-    top: 70vh;
-    left: 75vw;
-}
-.index-project1 .pj1-img img {
-    width: 765px;
-    border-radius: 10px;
-
-    position: absolute;
-    top: 15vh;
-    left: 52vw;
 }
