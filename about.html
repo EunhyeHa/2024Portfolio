@@ -29,8 +29,18 @@
   <script src="./assets/Js/global.js" defer></script>
   
   <script src="./about.js" defer></script>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
 </head>
 
+<!-- to do list
+- 헤더 색상 변경
+- 제목-요소에 임시사진넣기
+
+-->
 <body>
   <!-- 주석 5개, 3개, 기본 -->
   <!------ Loading ------>
@@ -58,22 +68,39 @@
   <section class="about-main">
     <div class="main-title">
         <h1>바다를 
-            <span class="title-box1">요소</span> 헤엄치는 파도처럼,</h1>
-        <h1>내가 직접 쓰는 
-            <span class="title-box2">요소</span> 이야기</h1>
+            <span class="title-box1">요소</span> 헤엄치는,</h1>
+        <h1>파도 
+            <span class="title-box2">요소</span> 처럼</h1>
+    </div>
+  </section>
+
+  <!-- gsap -->
+  <!----- about-intro ----->
+  
+  <section class="about-intro">
+    <div class="intro-txt-wrapper"> 
+        <h3 class="txt-inner">Who Am I</h3>
+        <div class="txt-line"></div>
     </div>
 
-    <div class="main-txt">
-        <h3>Who Am I</h3>
-        <div class="txt-img"><img src="" alt="">
-        </div>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
-        <p>키워드 형용사</p>
+    <!-- <div class="txt-line"></div> -->
+
+    <div class="txt-img">
+      <img src="" alt="">
+    </div>
+        
+    <div class="txt-word">
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
+      <p>keyword</p>
     </div>
   </section>
 
@@ -96,7 +123,7 @@
     </div>
     <div class="career-list-etc">
         <p>+ 운전면허 보통 2종</p>
-        <p>+ 웹디자인기능사 자격증(예정)</p>
+        <!-- <p>+ 웹디자인기능사 자격증(예정)</p> -->
     </div>
   </section>
 
@@ -109,7 +136,7 @@
             CSS Animation을 활용한 모션 구현<br>
             미디어 쿼리를 이용한 반응형 웹 제작<br>
             SCSS를 활용한 스타일값</p>
-            <h1>HTML5</h1> 
+            <h1>HTML5</h1>
             <h1>& CSS3</h1>
         </li>
         <li>
@@ -153,8 +180,16 @@
   <!----- about-fooer ----->
   <section class="about-footer">
     <p>더 많은 정보가 궁금하다면 아래의 메일로 연락 부탁한다는 내용의 텍스트 더 많은 정보가 궁금하다면 아래의 메일로 연락 부탁한다는 내용의 텍스트 더 많은 정보가 궁금하다면 아래의 메일</p>
+
     <div class="footer-mail">
-        GRACE9695@NAVER.COM
+        <div class="mail">
+          <span>GRACE9695</span>@NAVER.COM
+          <span>GRACE9695</span>@NAVER.COM
+          <span>GRACE9695</span>@NAVER.COM
+          <span>GRACE9695</span>@NAVER.COM
+          <span>GRACE9695</span>@NAVER.COM
+          <span>GRACE9695</span>@NAVER.COM
+        </div>
     </div>
   </section>
   
