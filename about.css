@@ -61,14 +61,21 @@ body {
 }
 
 .about-intro .txt-img {
-    width: 900px; 
+    width: 900px;
     height: 950px;
+    background: center center / cover;
+    background-position: 0 0;
+    overflow: hidden;
     background-color: #ddd;
     color: #ddd;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.about-intro .txt-img img {
+    /* width: 900px; 
+    height: 950px; */
 }
 
 .about-intro .txt-word {
