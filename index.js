@@ -27,11 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
 // project showList
-// project1 show
+// project1 
 document.addEventListener("DOMContentLoaded", function() {
     const pj1 = document.querySelector('.pj1');
     const indexProject1 = document.querySelector('.index-project1');
@@ -93,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// project2 show
+// project2 
 document.addEventListener("DOMContentLoaded", function() {
     const pj2 = document.querySelector('.pj2');
     const indexProject2 = document.querySelector('.index-project2');
@@ -111,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         h2.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         h2.style.opacity = '0';
-        h2.style.transform = 'translateY(20px)';
+        h2.style.transform = 'translateY(-10px)';
 
         p.style.transition = 'opacity 0.2s ease, transform 0.5s ease';
         p.style.opacity = '0';
@@ -141,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         h1.style.transform = 'translateX(20px)';
 
         h2.style.opacity = '0';
-        h2.style.transform = 'translateY(0px)';
+        h2.style.transform = 'translateY(-20px)';
 
         p.style.opacity = '0';
         p.style.transform = 'translateY(20px)';
@@ -297,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         h2.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         h2.style.opacity = '0';
-        h2.style.transform = 'translateY(20px)';
+        h2.style.transform = 'translateY(-10px)';
 
         p.style.transition = 'opacity 0.2s ease, transform 0.5s ease';
         p.style.opacity = '0';
@@ -327,7 +324,7 @@ document.addEventListener("DOMContentLoaded", function() {
         h1.style.transform = 'translateX(20px)';
 
         h2.style.opacity = '0';
-        h2.style.transform = 'translateY(0px)';
+        h2.style.transform = 'translateY(-20px)';
 
         p.style.opacity = '0';
         p.style.transform = 'translateY(20px)';
