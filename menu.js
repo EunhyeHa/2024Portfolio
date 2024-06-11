@@ -1,10 +1,10 @@
 // menu-inner2-Hover
 const imagePaths = {
-    pj1: "./assets/images/index/index-pj1-img.jpg",
+    pj1: "./assets/images/menu/menu-pj1-img.png",
     pj2: "./assets/images/menu/menu-pj2-img.jpg",
     pj3: "./assets/images/menu/menu-pj3-img.jpg",
-    pj4: "./assets/images/menu/menu-pj4-img2.jpg",
-    pj5: "./assets/images/menu/예정.jpg"
+    pj4: "./assets/images/menu/menu-pj4-img.jpg",
+    pj5: "./assets/images/menu/.jpg"
 };
 
 let imageLoaded = false; // 이미지 로드 여부를 나타내는 변수
