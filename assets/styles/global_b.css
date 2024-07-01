@@ -23,6 +23,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative; /* 수정된 부분: 로고의 절대 위치 기준을 설정 */
+
 }
 
 /*** menu ***/
@@ -64,6 +66,17 @@ body {
   left: 5px;
   right: 5px;
   bottom: 5px;
+}
+
+/***** logo *****/
+.allPage-header .pc-main-nav .menu-wrapper .menu-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-logo img {
+  height: 26px;  
 }
 
 /* hover */
