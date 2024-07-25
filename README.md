@@ -2,7 +2,8 @@
 - globalVar 생성 및 적용
 - global > menu 클릭시 적용되는 이벤트 구현
   1) menu -> close flip
-  2) menu list hover -> 각 이미지 show 
+  2) menu list hover -> 각 이미지 show
+  3) menu list transition 적용
 
 ## 240723 화 ##
 - 포트폴리오 to do list 정리
