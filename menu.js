@@ -38,10 +38,6 @@ document.querySelectorAll('.menu-inner2 ul li').forEach(item => {
 
 
 
-
-
-
-
 // menu-inner1-underline hover
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.hover-underline-menu li');

@@ -1,0 +1,367 @@
+@charset "utf-8";
+body {
+  font-family: var(--primary-font-en);
+  overflow: hidden;
+  color: #fff;
+  background-color: tomato;
+}
+
+/* Frame effect */
+.frame-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+  overflow: hidden;
+  transition: opacity 0.6s ease-in-out;
+  /* pointer-events: none; */
+  opacity: 0;
+  transform: translateX(-100%); /* Initial position off-screen to the left */
+}
+.frame-effect.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move into view */
+}
+
+/* The overlay background color and center cutout effect */
+.frame-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  z-index: 0;
+}
+
+.frame-effect::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 80%;
+  background-color: tomato;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Image styling */
+.frame-effect img {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.frame-effect.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move into view */
+}
+
+/****** header ******/
+.allPage-header {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding: 25px 70px 0 70px;
+  font-family: var(--primary-font-en);
+  font-size: 15px;
+  position: fixed;
+  z-index: 99999;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*** menu ***/
+.allPage-header .pc-main-nav .menu-wrapper .menu {
+  width: 64px;
+  height: 26px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: rgba(128, 128, 128, 0.1) solid 1px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a.flipped {
+  transform: rotateX(180deg);
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a .front,
+.allPage-header .pc-main-nav .menu-wrapper .menu a .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a .back {
+  transform: rotateX(180deg);
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a::before,
+.allPage-header .pc-main-nav .menu-wrapper .menu a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a::before {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: -1;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu a::after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+/* hover */
+.allPage-header .pc-main-nav .menu-wrapper .menu:hover {
+  border: #fff 1px solid;
+  background-color: transparent;
+}
+
+/***** logo *****/
+.allPage-header .pc-main-nav .menu-wrapper .menu-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-logo img {
+  height: 26px;
+}
+
+/***** right-top *****/
+.allPage-header .pc-main-nav .menu-wrapper .menu-item {
+  display: flex;
+  align-items: center;
+}
+
+/*** GitHub ***/
+.allPage-header .pc-main-nav .menu-wrapper .menu-item1 {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: rgba(128, 128, 128, 0.1) solid 1px;
+  border-radius: 50px;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item1 a {
+  width: 70px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item1:hover {
+  border: #fff 1px solid;
+  background-color: transparent;
+}
+
+/*** Mail ***/
+.allPage-header .pc-main-nav .menu-wrapper .menu-item2 {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: rgba(128, 128, 128, 0.1) solid 1px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item2:hover {
+  border: #fff 1px solid;
+  background-color: transparent;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item2 a {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allPage-header .pc-main-nav .menu-wrapper .menu-item2 img {
+  width: 16px;
+}
+
+/*** hidden-toggle ***/
+/****** menu-main ******/
+.menu-main {
+    height: 100vh;
+    padding: 0 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+.menu-main.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move into view */
+}
+
+/*** mouse-hover-effect ***/
+.hover-underline-menu li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 2;
+  position: relative;
+}
+
+.hover-underline-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: -5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+.hover-underline-menu li:hover a::after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.5) !important;
+}
+
+.menu-main .menu-wrapper .menu-inner1 ul {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-main .menu-wrapper .menu-inner2 li {
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.menu-main .menu-wrapper .menu-inner2 ul li:not(:first-child) {
+  max-width: fit-content;
+  align-self: flex-start;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px 18px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  border: rgba(128, 128, 128, 0.1) solid 1px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 30px;
+}
+
+.menu-main .menu-wrapper .menu-inner2 ul li:hover:not(:first-child) {
+  border: #fff solid 1px;
+  background-color: transparent;
+}
+
+/****** menu-side ******/
+.menu-side {
+    width: 225px;
+    margin: 0 70px;
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%); /* 화면 밖에서 시작 */
+  }
+  
+  .menu-side.visible {
+    opacity: 1;
+    transform: translateX(0); /* 화면 안으로 이동 */
+  }
+  
+  /* 사이드 내부 스타일 */
+  .menu-side .side-wrapper .side-inner1 {
+    padding: 15px 20px 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+  }
+  
+  .menu-side .side-wrapper .side-inner1 video {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+  
+  .menu-side .side-wrapper .side-inner1 h1 {
+    font-weight: 550;
+  }
+  
+  .menu-side .side-wrapper .side-inner2 {
+    margin-top: 10px;
+    padding: 15px 20px 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+  }
+  
+  .menu-side .side-wrapper .side-inner2 p {
+    color: #aaaaaa;
+    margin-top: 5px;
+  }
+  
+  /* 사이드 내 이미지 스타일 */
+  .menu-side img {
+    height: 60vh;
+    object-fit: contain;
+  }
+  

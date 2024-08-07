@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>global</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
@@ -24,6 +24,7 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/globalVar.css">
 
   <!-- jQuery -->
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
@@ -42,7 +43,9 @@
     <nav class="pc-main-nav">
       <ul class="menu-wrapper">
         <!-- menu -->
-        <li class="menu"><a href="./menu.html">menu</a></li>
+        <li class="menu">
+          <a href="./menu.html" id="menuToggle" class="flip">menu</a>
+        </li>
 
         <!-- logo -->
         <li class="menu-logo"><a href="./index.html"><img src="./assets/images/global/logo.png" alt="logo"></a></li>
@@ -55,5 +58,7 @@
       </ul>
     </nav>
   </header>
+
 </body>
+
 </html>
