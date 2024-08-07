@@ -1,3 +1,19 @@
+## 240807 수 ##
+- 텍스트 드래그 컬러 적용
+- 수정된 global 전체 페이지에 적용(수정)
+- AderError 상세페이지 문서 작성
+
+## 240725 목 ##
+- globalVar 생성 및 적용
+- global > menu 클릭시 적용되는 이벤트 구현
+  1) menu -> close flip
+  2) menu list hover -> 각 이미지 show
+  3) menu list transition 적용
+
+## 240723 화 ## 
+- 포트폴리오 to do list 정리
+- 포트폴리오 프로젝트별 수정사항 정리
+
 ## 240702 화 ##
 - 새 개인 프로젝트 주제 선정, 레퍼런스 리스트업
 - 포트폴리오 관련 질문 리스트업
