@@ -3,12 +3,17 @@ body {
   font-family: var(--primary-font-en);
   overflow: hidden;
   color: #fff;
-  background-color: tomato;
+  background: tomato;
   position: relative;
-  z-index: 99999;
 }
 
-/* Frame effect */
+/* 
+z-index 모든 페이지에서 최상위에 오도록 
+단위: 9000, 9990,9991, 9999, 99999
+*/
+
+/****** header ******/
+/* frame effect */
 .frame-effect {
   position: fixed;
   top: 0;
@@ -16,16 +21,16 @@ body {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  z-index: -1;
+  z-index: 9000;
   overflow: hidden;
   transition: opacity 0.6s ease-in-out;
-  /* pointer-events: none; */
+  pointer-events: none;
   opacity: 0;
-  transform: translateX(-100%); /* Initial position off-screen to the left */
+  transform: translateX(-100%);
 }
 .frame-effect.visible {
-    opacity: 1;
-    transform: translateX(0); /* Move into view */
+  opacity: 1;
+  transform: translateX(0); 
 }
 
 /* The overlay background color and center cutout effect */
@@ -36,8 +41,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #101010;
-  z-index: 0;
+  background-color: var(--color-b);
+  z-index: 9990;
 }
 
 .frame-effect::after {
@@ -47,12 +52,14 @@ body {
   left: 30%;
   width: 40%;
   height: 80%;
-  background-color: tomato;
+  
+  /******************** 나중에 영상으로 변경 ********************/
+  background: url(./assets/images/index/index-main-bgImg.jpg) no-repeat 50% / cover;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 9991;
 }
 
-/* Image styling */
+/* 이미지 스타일링 */
 .frame-effect img {
   position: absolute;
   top: 10%;
@@ -61,7 +68,7 @@ body {
   height: 80%;
   object-fit: cover;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .frame-effect.visible {
@@ -78,10 +85,12 @@ body {
   font-family: var(--primary-font-en);
   font-size: 15px;
   position: fixed;
+
   z-index: 99999;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper {
+  color: #fff;
   height: 30px;
   display: flex;
   align-items: center;
@@ -105,6 +114,7 @@ body {
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a {
+  color: #fff;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -149,7 +159,7 @@ body {
 .allPage-header .pc-main-nav .menu-wrapper .menu a::before {
   background-color: transparent;
   transition: background-color 0.3s ease;
-  z-index: -1;
+  z-index: 9000;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a::after {
@@ -233,6 +243,8 @@ body {
     height: 100vh;
     padding: 0 70px;
     position: fixed;
+    z-index: 9999;
+
     top: 0;
     left: 0;
     display: flex;
@@ -244,7 +256,7 @@ body {
   
 .menu-main.visible {
     opacity: 1;
-    transform: translateX(0); /* Move into view */
+    transform: translateX(0);
 }
 
 /*** mouse-hover-effect ***/
@@ -314,55 +326,58 @@ body {
 
 /****** menu-side ******/
 .menu-side {
-    width: 225px;
-    margin: 0 70px;
-    position: fixed;
-    top: 30%;
-    right: 0%;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    opacity: 0;
-    transform: translateX(100%); /* 화면 밖에서 시작 */
-  }
-  
-  .menu-side.visible {
-    opacity: 1;
-    transform: translateX(0); /* 화면 안으로 이동 */
-  }
-  
-  /* 사이드 내부 스타일 */
-  .menu-side .side-wrapper .side-inner1 {
-    padding: 15px 20px 20px;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 10px;
-  }
-  
-  .menu-side .side-wrapper .side-inner1 video {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #fff;
-  }
-  
-  .menu-side .side-wrapper .side-inner1 h1 {
-    font-weight: 550;
-  }
-  
-  .menu-side .side-wrapper .side-inner2 {
-    margin-top: 10px;
-    padding: 15px 20px 20px;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 10px;
-  }
-  
-  .menu-side .side-wrapper .side-inner2 p {
-    color: #aaaaaa;
-    margin-top: 5px;
-  }
-  
-  /* 사이드 내 이미지 스타일 */
-  .menu-side img {
-    height: 60vh;
-    object-fit: contain;
-  }
+  width: 225px;
+  margin: 0 70px;
+  position: fixed;
+  z-index: 99999;
+
+
+  top: 30%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(100%); /* 화면 밖에서 시작 */
+}
+
+.menu-side.visible {
+  opacity: 1;
+  transform: translateX(0); /* 화면 안으로 이동 */
+}
+
+/* 사이드 내부 스타일 */
+.menu-side .side-wrapper .side-inner1 {
+  padding: 15px 20px 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+.menu-side .side-wrapper .side-inner1 video {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.menu-side .side-wrapper .side-inner1 h1 {
+  font-weight: 550;
+}
+
+.menu-side .side-wrapper .side-inner2 {
+  margin-top: 10px;
+  padding: 15px 20px 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+.menu-side .side-wrapper .side-inner2 p {
+  color: #aaaaaa;
+  margin-top: 5px;
+}
+
+/* 사이드 내 이미지 스타일 */
+.menu-side img {
+  height: 60vh;
+  object-fit: contain;
+}

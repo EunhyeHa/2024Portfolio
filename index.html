@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio</title>
+  <title>Eunhye's Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
   <!------ favicon ------>
@@ -24,14 +24,14 @@
 
   <!------ style ------>
   <!-- z-index 꼭 확인!!!!! -->
-  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./global.css">
   <link rel="stylesheet" href="./assets/styles/globalVar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
 
   <!------ jQuery ------>
-  <script src="./assets/Js/global.js" defer></script>
   <script src="./index.js" defer></script>
+  <script src="./global.js" defer></script>
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -43,24 +43,77 @@
 <body>
   <!-- 주석 5개, 3개, 기본 -->
   <!------ Loading ------>
-  <!--- mouseEmoji --->
+  <!-- mouseEmoji -->
 
-  <!----- header ----->
+  <!------- header ------->
+  <!-- frame-effect -->
+  <div class="frame-effect" id="frameEffect">
+    <img src="여기에 메인이미지" alt="메인영상">
+  </div>
+
   <header class="allPage-header">
     <!----- nav ----->
     <nav class="pc-main-nav">
       <ul class="menu-wrapper">
-        <li class="menu"><a href="./global.html">menu</a></li>
+
+        <!-- menu -->
+        <li class="menu">
+          <a href="#" id="menuToggle" class="flip">menu</a>
+        </li>
+
+        <!-- logo -->
         <li class="menu-logo"><a href="./index.html"><img src="./assets/images/global/logo.png" alt="logo"></a></li>
 
+        <!-- right-top -->
         <div class="menu-item">
-          <li class="menu-item1"><a href="https://github.com/EunhyeHa" target="_blank">GitHub</a></li>
+          <li class="menu-item1"><a href="https://github.com/EunhyeHa">GitHub</a></li>
           <li class="menu-item2"><a href=""><img src="./assets/images/global/icon-mail-w.png" alt="email"></a></li>
         </div>
       </ul>
     </nav>
   </header>
+
+  <!--- hidden-toggle --->
+  <!------- menu-main ------->
+  <section class="menu-main hidden" id="menuMain">
+    <div class="menu-wrapper">
+      <div class="menu-inner1">
+        <ul class="hover-underline-menu">
+          <li class="hover-effect"><a href="./about.html">About Me</a></li>
+          <li class="hover-effect"><a href="https://github.com/EunhyeHa/2024Portfolio" target="_blank">작업일지</a></li>
+        </ul>
+      </div>
+
+      <!-- class m 주의 -->
+      <div class="menu-inner2">
+        <ul>
+          <li>Works</li>
+          <li class="mpj1"><a href="">Adererror</a></li>
+          <li class="mpj2"><a href="">ARTBODA Gallery</a></li>
+          <li class="mpj3"><a href="">CONNET</a></li>
+          <li class="mpj4"><a href="">FIFEET</a></li>
+          <li class="mpj5"><a href="">개인프로젝트</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!------ menu-side ------>
+  <section class="menu-side hidden">
+    <div class="side-wrapper">
+      <div class="side-inner1">
+        <h1>Main Video Story</h1>
+        <video src="" alt="비디오 썸네일"></video>
+      </div>
+      <div class="side-inner2">
+        <h1>Contact Me</h1>
+        <p>grace9695@naver.com</p>
+      </div>
+    </div>
+  </section>
   
+
+  <!------------------------- 여기부터 본문 내용 ------------------------->
   <!----- index-main ----->
   <section class="index-main">
     <div class="list-wrapper">

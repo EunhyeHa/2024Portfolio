@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 이미지 경로 설정
     const imagePaths = {
-        pj1: "./assets/images/menu/menu-pj1-img.png",
-        pj2: "./assets/images/menu/menu-pj2-img.jpg",
-        pj3: "./assets/images/menu/menu-pj3-img.jpg",
-        pj4: "./assets/images/menu/menu-pj4-img.jpg",
-        pj5: "./assets/images/menu/menu-pj5-img.jpg"
+        mpj1: "./assets/images/global/menu-pj1-img.png",
+        mpj2: "./assets/images/global/menu-pj2-img.jpg",
+        mpj3: "./assets/images/global/menu-pj3-img.jpg",
+        mpj4: "./assets/images/global/menu-pj4-img.jpg",
+        mpj5: "./assets/images/global/menu-pj5-img.jpg"
     };
 
     let currentImageClass = ''; // 현재 로드된 이미지 클래스
