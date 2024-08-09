@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuLink.innerHTML = '<span class="front">menu</span><span class="back">close</span>';
 
+
     // 메뉴 링크 클릭 이벤트 처리
     menuLink.addEventListener("click", function (event) {
-        event.preventDefault(); // 기본 링크 동작 방지
+        event.preventDefault();
         menuLink.classList.toggle("flipped");
 
         if (menuLink.classList.contains("flipped")) {
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             frameEffect.classList.remove("visible"); // 프레임 숨기기
         }
     });
+
 
     // 메뉴 항목에 마우스 호버 이벤트 처리
     document.querySelectorAll('.menu-inner2 ul li:not(.works)').forEach(item => {
@@ -62,6 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+
+
 
     // menu-inner1-underline hover
     const menuItems = document.querySelectorAll('.hover-underline-menu li');
