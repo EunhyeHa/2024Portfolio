@@ -34,7 +34,13 @@
   <script src="./assets/Js/global.js" defer></script>
 </head>
 
+
 <body>
+  <!-- frame-effect -->
+  <div class="frame-effect" id="frameEffect">
+    <img src="여기에 메인이미지" alt="메인영상">
+    </div>
+
   <!-- mouseEmoji -->
 
   <!------- header ------->
@@ -42,9 +48,10 @@
     <!----- nav ----->
     <nav class="pc-main-nav">
       <ul class="menu-wrapper">
+
         <!-- menu -->
         <li class="menu">
-          <a href="./menu.html" id="menuToggle" class="flip">menu</a>
+          <a href="./global.html" id="menuToggle" class="flip">menu</a>
         </li>
 
         <!-- logo -->
@@ -59,6 +66,44 @@
     </nav>
   </header>
 
-</body>
 
+  <!--- hidden-toggle --->
+  <!------- menu-main ------->
+  <section class="menu-main hidden" id="menuMain">
+    <div class="menu-wrapper">
+      <div class="menu-inner1">
+        <ul class="hover-underline-menu">
+          <li class="hover-effect"><a href="./about.html">About Me</a></li>
+          <li class="hover-effect"><a href="https://github.com/EunhyeHa/2024Portfolio" target="_blank">작업일지</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-inner2">
+        <ul>
+          <li>Works</li>
+          <li class="pj1"><a href="">Adererror</a></li>
+          <li class="pj2"><a href="">ARTBODA Gallery</a></li>
+          <li class="pj3"><a href="">CONNET</a></li>
+          <li class="pj4"><a href="">FIFEET</a></li>
+          <li class="pj5"><a href="">개인프로젝트</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!------ menu-side ------>
+  <section class="menu-side hidden">
+    <div class="side-wrapper">
+      <div class="side-inner1">
+        <h1>Main Video Story</h1>
+        <video src="" alt="비디오 썸네일"></video>
+      </div>
+      <div class="side-inner2">
+        <h1>Contact Me</h1>
+        <p>grace9695@naver.com</p>
+      </div>
+    </div>
+  </section>
+
+</body>
 </html>

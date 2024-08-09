@@ -1,3 +1,13 @@
+/* menu 제외 */
+::-moz-selection {
+  background: var(--color-w);
+  color: var(--color-b);
+}
+  ::selection {
+  background-color: var(--color-w);
+  color: var(--color-b);
+}
+
 html,
 body,
 p,
