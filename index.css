@@ -1,11 +1,4 @@
 @charset "utf-8";
-body {
-  font-family: var(--primary-font-en);
-  overflow: hidden;
-  color: #fff;
-  background: url(./assets/images/index/index-main-bgImg.jpg) no-repeat 100% / cover;
-  position: relative;
-}
 
 /* 
 z-index 모든 페이지에서 최상위에 오도록 

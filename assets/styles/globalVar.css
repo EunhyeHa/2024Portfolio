@@ -24,6 +24,7 @@
 --size-lg: 18px;
 --size-xl: 20px;
 --size-xxl: 25px;
+
 /*** weight ***/
 --weight-xs: 400;
 --weight-sm: 500;
@@ -58,4 +59,5 @@
 /* --full-size: 100%;
 --text-indent: -9999px;
 --primary-center: 0 auto; */
+
 }
