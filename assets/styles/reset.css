@@ -1,10 +1,10 @@
 /* menu 제외 */
 ::-moz-selection {
-  background: var(--color-w);
+  background: var(--color-g);
   color: var(--color-b);
 }
   ::selection {
-  background-color: var(--color-w);
+  background-color: var(--color-g);
   color: var(--color-b);
 }
 

@@ -1,3 +1,7 @@
+## 240813 화 ##
+- adererror, artboda 상세페이지 css 작성
+- 작업 스케쥴 조정
+
 ## 240811 일 ##
 - adererror, artboda 상세페이지 문서 작성
 

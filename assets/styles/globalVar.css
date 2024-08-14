@@ -27,8 +27,8 @@
 
 /*** weight ***/
 --weight-xs: 400;
---weight-sm: 500;
---weight-md: 600;
+/* --weight-sm: 500; */
+--weight-md: 500;
 --weight-lg: 700;
 
 /****** color ******/

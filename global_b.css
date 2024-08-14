@@ -1,7 +1,6 @@
 @charset "utf-8";
 body {
   font-family: var(--primary-font-en);
-  overflow: hidden;
   color: var(--color-w);
   position: relative;
 }
