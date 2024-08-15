@@ -1,15 +1,16 @@
 @charset "utf-8";
 body {
     color: var(--color-b);
+    text-transform: capitalize;
 }
 
 /***** ader-main *****/
-.ader-main {
-    padding: 190px 70px 0;
+.ader-main .main-txtWrapper {
+    padding: 170px 70px 0;
 }
 
 .ader-main h1 {
-    padding-bottom: 100px;
+    padding-bottom: 65px;
     font-size: 120px;
     font-weight: var(--weight-md);
 }
@@ -34,4 +35,302 @@ body {
 .ader-main .main-txt .txt3 p,
 .ader-main .main-txt .txt4 p {
     color: var(--color-g);
+}
+
+.ader-main video {
+    width: 100%; 
+    margin-top: 25px;
+    background-color: #ddd;
+    color: var(--color-b);
+}
+
+/***** ader-overview *****/
+.ader-overview {
+    padding: 160px 70px 0;
+}
+.ader-overview .overview-title h3 {
+    padding-bottom: 30px; 
+    font-weight: var(--weight-md);
+}
+.ader-overview .overview-title h2 {
+    width: 80%;
+    font-family: 'pretendard';
+    font-size: 50px;
+    font-weight: var(--weight-md);
+    line-height: 1.4;
+} 
+
+/*** 목표, 기여도 ***/
+.ader-overview .overview-txt .txt1 {
+    padding: 130px 0 80px 340px;
+    display: flex;
+}
+.ader-overview .overview-txt .txt1 .goal img,
+.ader-overview .overview-txt .txt1 .contribute img {
+    padding-left: 20px;
+}
+.ader-overview .overview-txt .txt1 .goal h3,
+.ader-overview .overview-txt .txt1 .contribute h3 {
+    padding-bottom: 20px;
+    font-weight: var(--weight-md);
+}
+.ader-overview .overview-txt .txt1 .goal p,
+.ader-overview .overview-txt .txt1 .contribute p {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.ader-overview .overview-txt .txt1 .goal .list {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    color: var(--color-g);
+}
+
+/*** 작업순서 ***/
+.ader-overview .overview-txt .txt2 {
+    padding-left: 340px;
+    overflow: hidden;
+}
+.ader-overview .overview-txt .txt2 .workflow h3 {
+    padding-bottom: 20px;
+    font-weight: var(--weight-md);
+}
+.ader-overview .overview-txt .txt2 .workflow img {
+    padding-left: 20px;
+}
+.ader-overview .overview-txt .txt2 .workflow .weeks {
+    padding-left: 20px;
+    display: flex;
+}
+.ader-overview .overview-txt .txt2 .workflow .weeks h4 {
+    width: 360px;
+    font-weight: var(--weight-md);
+    font-size: 20px;
+    line-height: 1.8;
+}
+.ader-overview .overview-txt .txt2 .workflow .weeks .w1 p,
+.ader-overview .overview-txt .txt2 .workflow .weeks .w2 p,
+.ader-overview .overview-txt .txt2 .workflow .weeks .w3 p {
+    margin: 12px 0 12px 0;
+    font-size: 16px;
+    color: var(--color-g);
+}
+
+/***** ader-publishing *****/
+/*** 디자인 ***/
+.ader-publishing .design {
+    padding: 130px 70px 0 70px;
+    display: flex;
+}
+.ader-publishing .design .keyword {
+    width: 700px;
+    height: 800px;
+    padding: 200px 175px;
+    background-color: #0000c5;
+}
+.ader-publishing .design .keyword .keyword-box {
+    width: 350px;
+    height: 393px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.ader-publishing .design .keyword .keyword-box h2 {
+    font-weight: var(--weight-sb);
+    padding: 80px 90px 50px 60px;
+}
+.ader-publishing .design .keyword .keyword-box p {
+    width: 200px;
+    margin: 0 60px 20px;
+    padding: 10px 0 10px 20px;
+    font-family: 'pretendard';
+    font-weight: var(--weight-sb);
+    background-color: #f3f3f3;
+    color: #0000c5;
+
+    border-radius: 30px;
+}
+
+/*** 내용 ***/
+.ader-publishing .content .typeColor {
+    width: 1060px;
+    height: 620px;
+    margin-left: 20px;
+    background-color: #e0e0e0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* type */
+.ader-publishing .content .typeColor .typeColor-box {
+    font-size: 20px;
+    margin-left: 70px;
+    flex: 1;
+}
+.ader-publishing .content .typeColor .typeColor-box .type {
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-start;
+}
+.ader-publishing .content .typeColor .typeColor-box .type h2 {
+    width: 170px;
+    font-weight: var(--weight-sb);
+}
+.ader-publishing .content .typeColor .typeColor-box .type .ko,
+.ader-publishing .content .typeColor .typeColor-box .type .en {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.ader-publishing .content .typeColor .typeColor-box .type .en h3 {
+    padding-left: 80px;
+}
+.ader-publishing .content .typeColor .typeColor-box .type .ko h3,
+.ader-publishing .content .typeColor .typeColor-box .type .en h3 {
+    font-weight: var(--weight-md);
+    color: var(--color-g);
+    text-transform: lowercase;
+}
+
+/* font-weight */
+.ader-publishing .content .typeColor .typeColor-box .type .ko .font p:nth-of-type(1) {
+    font-weight: var(--weight-rg);
+}
+.ader-publishing .content .typeColor .typeColor-box .type .ko .font p:nth-of-type(2) {
+    font-weight: var(--weight-md);
+}
+.ader-publishing .content .typeColor .typeColor-box .type .ko .font p:nth-of-type(3) {
+    font-weight: var(--weight-sb);
+}
+.ader-publishing .content .typeColor .typeColor-box .type .ko .font p:nth-of-type(4) {
+    font-weight: var(--weight-bo);
+}
+
+.ader-publishing .content .typeColor .typeColor-box .type .ko .font,
+.ader-publishing .content .typeColor .typeColor-box .type .en .font {
+    padding-left: 40px;
+    font-family: 'pretendard';
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+}
+
+/* color */
+.ader-publishing .content .typeColor .color {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.ader-publishing .content .typeColor .color h2 {
+    width: 170px;
+    font-size: 20px;
+    font-weight: var(--weight-sb);
+}
+.ader-publishing .content .typeColor .color div {
+    width: 130px; height: 165px;
+    padding: 110px 0 0 15px;
+    font-size: 16px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+.ader-publishing .content .typeColor .color div:nth-of-type(2),
+.ader-publishing .content .typeColor .color div:nth-of-type(3),
+.ader-publishing .content .typeColor .color div:nth-of-type(4) {
+    margin-left: 35px;
+}
+.ader-publishing .content .typeColor .color .color1 {
+    background-color: var(--color-w);
+}
+.ader-publishing .content .typeColor .color .color2 {
+    background-color: #f3f3f3;
+}
+.ader-publishing .content .typeColor .color .color3 {
+    background-color: #0000c5;
+    color: var(--color-w);
+}
+.ader-publishing .content .typeColor .color .color4 {
+    background-color: #000000;
+    color: var(--color-w);
+}
+
+/* 설명 */
+.ader-publishing .content .txt {
+    margin: 60px 0 0 360px;
+    flex: 1;
+}
+
+/*** 퍼블리싱 내용 ***/
+.ader-publishing .publishing {
+    padding: 130px 70px 0 410px;
+    display: flex;
+}
+.ader-publishing .publishing .txt1 h3 {
+    margin-bottom: 20px;
+    font-weight: var(--weight-md);
+}
+.ader-publishing .publishing .txt1 img {
+    padding-left: 20px;
+}
+.ader-publishing .publishing .txt1 p {
+    padding-left: 20px;
+    font-family: 'pretendard';
+    font-size: 20px;
+    line-height: 1.8;
+}
+.ader-publishing .publishing .txt2 {
+    margin-left: 20px;
+}
+.ader-publishing .publishing .txt2 img {
+    padding: 45px 0 20px 0;
+}
+.ader-publishing .publishing .txt2 p {
+    font-size: 20px;
+}
+
+/*** 리뷰 ***/
+.ader-publishing .review {
+    margin-top: 180px;
+    padding: 100px 0 0 70px;
+    display: flex;
+
+    background-color: var(--color-b);
+    color: var(--color-w);
+}
+.ader-publishing .review h2 {
+    /* padding: 100px 0 0 70px; */
+    font-size: 50px;
+    font-weight: var(--weight-md);
+}
+.ader-publishing .review .txt ul {
+    padding: 0 0 100px 175px;
+    font-size: 20px;
+    font-family: 'pretendard';
+    line-height: 1.5;
+    list-style: inside;
+}
+
+/*** 결과물 링크/파일 ***/
+.ader-publishing .document {
+    padding: 130px 0 250px 1150px;
+    font-size: 20px;
+}
+.ader-publishing .document p {
+    padding-bottom: 15px;
+}
+.ader-publishing .document p span img {
+    
+    padding-left: 10px;
+    animation: float 1.5s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
