@@ -8,26 +8,29 @@ body {
 .ader-main .main-txtWrapper {
     padding: 170px 70px 0;
 }
-
 .ader-main h1 {
     padding-bottom: 65px;
     font-size: 120px;
     font-weight: var(--weight-md);
 }
-
 .ader-main .main-txt {
-    font-family: 'pretendard';
-    font-weight: var(--weight-md);
-    line-height: 1.5;
     display: flex;
     /* justify-content: space-between; */
 }
-
+.ader-main .main-txt .txt1,
+.ader-main .main-txt .txt2,
+.ader-main .main-txt .txt3,
+.ader-main .main-txt .txt4 {
+    width: 20%;
+    font-family: 'pretendard';
+    font-weight: var(--weight-md);
+    line-height: 1.5;
+}
 .ader-main .main-txt .txt2, .txt4 {
     margin-left: 20px;
 }
 .ader-main .main-txt .txt3 {
-    /* margin-left: 500px; */
+    margin-left: 500px;
 }
 
 .ader-main .main-txt .txt1 p,
@@ -49,7 +52,7 @@ body {
     padding: 160px 70px 0;
 }
 .ader-overview .overview-title h3 {
-    padding-bottom: 30px; 
+    padding-bottom: 50px; 
     font-weight: var(--weight-md);
 }
 .ader-overview .overview-title h2 {
@@ -58,7 +61,24 @@ body {
     font-size: 50px;
     font-weight: var(--weight-md);
     line-height: 1.4;
-} 
+}
+
+/*** highlight ***/
+.highlight {
+    padding: 0 5px;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    background-image: linear-gradient(to right, #0000c5 100%, transparent 0%);
+    background-position: 0 100%;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.5s ease-in-out;
+}
+.animate {
+    background-size: 100% 100%;
+}
+
 
 /*** 목표, 기여도 ***/
 .ader-overview .overview-txt .txt1 {
@@ -78,7 +98,7 @@ body {
 .ader-overview .overview-txt .txt1 .contribute p {
     padding-left: 20px;
     font-size: 20px;
-    line-height: 1.8;
+    line-height: var(--lineHeight-md); /* 1.8 */
 }
 
 .ader-overview .overview-txt .txt1 .goal .list {
@@ -107,7 +127,7 @@ body {
     width: 360px;
     font-weight: var(--weight-md);
     font-size: 20px;
-    line-height: 1.8;
+    line-height: var(--lineHeight-md);
 }
 .ader-overview .overview-txt .txt2 .workflow .weeks .w1 p,
 .ader-overview .overview-txt .txt2 .workflow .weeks .w2 p,
@@ -136,7 +156,7 @@ body {
     background-color: #fff;
     font-size: 20px;
 }
-.ader-publishing .design .keyword .keyword-box h2 {
+.ader-publishing .design .keyword .keyword-box h3 {
     font-weight: var(--weight-sb);
     padding: 80px 90px 50px 60px;
 }
@@ -174,7 +194,7 @@ body {
     display: flex;
     align-items: flex-start;
 }
-.ader-publishing .content .typeColor .typeColor-box .type h2 {
+.ader-publishing .content .typeColor .typeColor-box .type h3 {
     width: 170px;
     font-weight: var(--weight-sb);
 }
@@ -184,11 +204,11 @@ body {
     flex-direction: row;
     align-items: flex-start;
 }
-.ader-publishing .content .typeColor .typeColor-box .type .en h3 {
+.ader-publishing .content .typeColor .typeColor-box .type .en h4 {
     padding-left: 80px;
 }
-.ader-publishing .content .typeColor .typeColor-box .type .ko h3,
-.ader-publishing .content .typeColor .typeColor-box .type .en h3 {
+.ader-publishing .content .typeColor .typeColor-box .type .ko h4,
+.ader-publishing .content .typeColor .typeColor-box .type .en h4 {
     font-weight: var(--weight-md);
     color: var(--color-g);
     text-transform: lowercase;
@@ -223,7 +243,7 @@ body {
     display: flex;
     flex-direction: row;
 }
-.ader-publishing .content .typeColor .color h2 {
+.ader-publishing .content .typeColor .color h3 {
     width: 170px;
     font-size: 20px;
     font-weight: var(--weight-sb);
