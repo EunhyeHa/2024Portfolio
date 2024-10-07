@@ -236,6 +236,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+.ader-publishing .content .typeColor .typeColor-box .type .en .font {
+    @font-face {
+        font-family: 'Jost Sans';
+        src: url();
+    }
+}
 
 /* color */
 .ader-publishing .content .typeColor .color {
