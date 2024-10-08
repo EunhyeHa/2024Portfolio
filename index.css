@@ -104,6 +104,7 @@
     font-family: var(--primary-font-ko);
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     top: 73vh;
     left: 70vw;
 }
@@ -173,6 +174,7 @@
     font-family: var(--primary-font-ko);
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     top: 25vh;
     left: 37vw;
 }
@@ -221,6 +223,7 @@
     font-family: var(--primary-font-en);
     font-weight: 600;
     font-size: 75px;
+    line-height: 1.4;
     top: 65vh;
     left: 20vw;
 }
@@ -237,6 +240,7 @@
     width: 265px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     top: 73vh;
     left: 70vw;
 }
@@ -304,16 +308,16 @@
     font-family: var(--primary-font-ko);
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     top: 20vh;
     left: 40vw;
 }
 
-/*** project 5 - 미정 ***/
+/*** project 5 - Mercedes-Benz ***/
 .index-project5 {
     opacity: 0;
     visibility: hidden;
-    background: url(./assets/images/index/) no-repeat 40% 60% / cover;
-    background-color: tomato;
+    background: url(./assets/images/index/index-main-pj5.jpg) no-repeat 80% 35% / cover;
 
     position: absolute;
     top: 0;
@@ -332,11 +336,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .index-project5 .pj5-img {
     width: 590px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     position: absolute;
@@ -345,9 +350,10 @@
 }
 .index-project5 .pj5-img img{
     width: 100%;
-    height: auto;
-    transform: scale(2.2) translateY(25px) translateX(5px);
+    height: 100%;
+    object-fit: cover;
 }
+
 .index-project5 h1,
 .index-project5 h2,
 .index-project5 p {
@@ -374,6 +380,7 @@
     width: 265px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.4;
     top: 25vh;
     left: 37vw;
 }
