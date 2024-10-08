@@ -9,7 +9,7 @@ body {
 
 /* 
 z-index 모든 페이지에서 최상위에 오도록 
-단위: 9000, 9990,9991, 9999, 99999
+단위: 9000, 9990, 9991, 9999, 99999
 */
 
 /****** header ******/
@@ -73,7 +73,7 @@ z-index 모든 페이지에서 최상위에 오도록
 
 .frame-effect.visible {
   opacity: 1;
-  transform: translateX(0); /* Move into view */
+  transform: translateX(0);
 }
 
 /*** nav ***/
@@ -115,7 +115,7 @@ z-index 모든 페이지에서 최상위에 오도록
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a {
-  color: #ffffff; /* 여기 */
+  color: #ffffff;
   position: relative;
   
   display: inline-block;
@@ -126,7 +126,7 @@ z-index 모든 페이지에서 최상위에 오도록
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: 0.6s ease-in-out;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a.flipped {

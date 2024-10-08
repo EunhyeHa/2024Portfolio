@@ -10,7 +10,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    transition: background-image 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /* index-main-list */
@@ -317,7 +317,8 @@
 .index-project5 {
     opacity: 0;
     visibility: hidden;
-    background: url(./assets/images/index/index-main-pj5.jpg) no-repeat 80% 35% / cover;
+    background: url(./assets/images/index/index-main-pj5.jpg) no-repeat 50% 33% / cover;
+    transform: scale(1.1);
 
     position: absolute;
     top: 0;
@@ -399,7 +400,7 @@
 }
 
 /*** flip animation ***/
-/* .index-txt .flip-space {
+.index-txt .flip-space {
     letter-spacing: 500px;
     position: absolute;
     top: 70vh;
@@ -408,7 +409,7 @@
     display: inline-block;
     width: 100px;
     text-align: center;
-} */
+}
 .index-txt h2 {
     font-family: var(--primary-font-en);
     font-size: 80px;
@@ -427,7 +428,9 @@
     width: 200px;
     height: 40px;
 }
-.flip span {
+
+/* class 이름 주의!!!!!!!! (step) */
+.flip .step {
     font-weight: 600;
     display: block;
     width: 100%;

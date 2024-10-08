@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mpj2: "./assets/images/global/menu-pj2-img.jpg",
         mpj3: "./assets/images/global/menu-pj3-img.jpg",
         mpj4: "./assets/images/global/menu-pj4-img.jpg",
-        mpj5: "./assets/images/global/menu-pj5-img.jpg" // 나중에 추가
+        mpj5: "./assets/images/global/menu-pj5-img.jpg"
     };
 
     let currentImageClass = ''; // 현재 로드된 이미지 클래스
@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     menuLink.innerHTML = '<span class="front">menu</span><span class="back">close</span>';
 
     // 메뉴 링크 클릭 이벤트 처리
-    menuLink.addEventListener("click", function (event) {
-        event.preventDefault(); // 기본 링크 동작 방지
+    menuLink.addEventListener("click", function (e) {
+        e.preventDefault(); 
         menuLink.classList.toggle("flipped");
 
         if (menuLink.classList.contains("flipped")) {

@@ -1,8 +1,11 @@
 ## 241008 화 ##
 - index 수정
   1) 로고 디벨롭
-  2) 썸네일 디테일 수정(텍스트 행갅 조절)
-  3) Menu 오류 수정
+  2) 썸네일 디테일 수정(텍스트 행간 조절)
+
+- global 수정
+  1) Menu 오류 수정!! 
+  - index.css > title flip > span class name 제대로 작성할 것(step)
 
 ## 241007 월 ##
 - index 수정

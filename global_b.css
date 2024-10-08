@@ -27,7 +27,7 @@ z-index 모든 페이지에서 최상위에 오도록
   background-color: transparent;
   z-index: 9000;
   overflow: hidden;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   pointer-events: none;
   opacity: 0;
   transform: translateX(-100%);
@@ -77,7 +77,7 @@ z-index 모든 페이지에서 최상위에 오도록
 
 .frame-effect.visible {
   opacity: 1;
-  transform: translateX(0); /* Move into view */
+  transform: translateX(0); 
 }
 
 /***** nav *****/
