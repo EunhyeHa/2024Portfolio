@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuLink.innerHTML = '<span class="front">menu</span><span class="back">close</span>';
 
     // 메뉴 링크 클릭 이벤트 처리
-    menuLink.addEventListener("click", function (e) {
+    menuLink.addEventListener("click", function(e){
         e.preventDefault(); 
         menuLink.classList.toggle("flipped");
 

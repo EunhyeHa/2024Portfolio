@@ -23,14 +23,14 @@ z-index 모든 페이지에서 최상위에 오도록
   background-color: transparent;
   z-index: 9000;
   overflow: hidden;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   pointer-events: none;
   opacity: 0;
   transform: translateX(-100%);
 }
 .frame-effect.visible {
   opacity: 1;
-  transform: translateX(0); 
+  transform: translateX(0);
 }
 
 /* The overlay background color and center cutout effect */
@@ -242,19 +242,18 @@ z-index 모든 페이지에서 최상위에 오도록
 /*** hidden-toggle ***/
 /****** menu-main ******/
 .menu-main {
-    height: 100vh;
-    padding: 0 70px;
-    position: fixed;
-    z-index: 9999;
-
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    opacity: 0;
-    transform: translateX(-100%);
-  }
+  height: 100vh;
+  padding: 0 70px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100%);
+}
   
 .menu-main.visible {
   opacity: 1;
@@ -332,11 +331,10 @@ z-index 모든 페이지에서 최상위에 오도록
 
 /****** menu-side ******/
 .menu-side {
-  width: 225px;
+  width: 230px;
   margin: 0 70px;
   position: fixed;
   z-index: 99999;
-
 
   top: 30%;
   right: 0%;
@@ -360,10 +358,16 @@ z-index 모든 페이지에서 최상위에 오도록
   border-radius: 10px;
 }
 
-.menu-side .side-wrapper .side-inner1 video {
+.menu-side .side-wrapper .side-inner1 img {
   width: 100%;
+  height: 100%;
   margin-top: 10px;
-  background-color: #fff;
+
+  filter: blur(3px);
+  transition: 0.3s ease-in-out; 
+}
+.menu-side .side-wrapper .side-inner1 img:hover {
+  filter: blur(0);
 }
 
 .menu-side .side-wrapper .side-inner1 h1 {
