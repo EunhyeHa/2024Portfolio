@@ -86,8 +86,9 @@ z-index 모든 페이지에서 최상위에 오도록
   height: 50px;
   padding: 25px 70px 0 70px;
   font-size: 15px;
+  font-family: var(--primary-font-en);
+  
   position: fixed;
-
   z-index: 99990;
 }
 
