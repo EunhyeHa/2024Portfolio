@@ -182,8 +182,8 @@ body {
     padding: 10px 0 10px 20px;
     font-family: 'pretendard';
     font-weight: var(--weight-md);
-    background-color: #006cd0;
-    color: var(--color-w);
+    background-color: #e5e4e5;
+    color: var(--color-b);
 
     border-radius: 30px;
 }
@@ -373,7 +373,6 @@ body {
     font-weight: var(--weight-md);
 }
 .benz-publishing .review .txt ul {
-    width: 90%;
     padding: 0 0 100px 175px;
     font-size: 20px;
     font-family: 'pretendard';
