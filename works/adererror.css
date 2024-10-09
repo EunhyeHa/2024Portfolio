@@ -352,11 +352,11 @@ body {
     color: var(--color-w);
 }
 .ader-publishing .review h2 {
-    /* padding: 100px 0 0 70px; */
     font-size: 50px;
     font-weight: var(--weight-md);
 }
 .ader-publishing .review .txt ul {
+    width: 90%;
     padding: 0 0 100px 175px;
     font-size: 20px;
     font-family: 'pretendard';
@@ -383,4 +383,55 @@ body {
     50% {
         transform: translateY(-5px);
     }
+}
+
+/***** next project *****/
+.next-project {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.next-project .pj-title {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 150px;
+
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 100s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.next-project .thumbnail a {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.next-project .thumbnail a > img {
+    height: 850px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.next-project .thumbnail p {
+    padding-top: 30px;
+}
+
+/***** back-to-top *****/
+.back-to-top { 
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+}
+.back-to-top img {
+    width: 50px;
 }

@@ -18,3 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     observer.observe(target);
 });
+
+
+// back to top
+let BTT = $('.back-to-top');
+
+BTT.click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+});
