@@ -421,6 +421,7 @@ body {
     height: 850px;
     object-fit: cover;
     overflow: hidden;
+    border-radius: 10px;
 }
 .next-project .thumbnail p {
     padding-top: 30px;
