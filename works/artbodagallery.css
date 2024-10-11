@@ -1,78 +1,64 @@
 @charset "utf-8";
 
-/* MBK Corpo */
-@font-face {
-    font-family: 'MBKCorpoS';
-    src: url('../works/files/mercedes/MBKCorpoS.woff') format('woff2');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'MBKCorpoSLight';
-    src: url('../works/files/mercedes/MBKCorporateSLight.woff') format('woff');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'MBKCorpoA';
-    src: url('../works/files/mercedes/MBKCorpoA.woff') format('woff');
-    font-weight: normal;
-}
+/* font face */
+
 
 body {
     color: var(--color-b);
     text-transform: capitalize;
 }
 
-/***** benz-main *****/
-.benz-main .main-txtWrapper {
+/***** artbodamain *****/
+.artbodamain .main-txtWrapper {
     padding: 170px 70px 0;
 }
-.benz-main h1 {
+.artbodamain h1 {
     padding-bottom: 65px;
     font-size: 120px;
     font-weight: var(--weight-md);
 }
-.benz-main .main-txt {
+.artbodamain .main-txt {
     display: flex;
 }
-.benz-main .main-txt .txt1,
-.benz-main .main-txt .txt2,
-.benz-main .main-txt .txt3,
-.benz-main .main-txt .txt4 {
+.artbodamain .main-txt .txt1,
+.artbodamain .main-txt .txt2,
+.artbodamain .main-txt .txt3,
+.artbodamain .main-txt .txt4 {
     width: 20%;
     font-family: 'pretendard';
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
-.benz-main .main-txt .txt2, .txt4 {
+.artbodamain .main-txt .txt2, .txt4 {
     margin-left: 20px;
 }
-.benz-main .main-txt .txt3 {
+.artbodamain .main-txt .txt3 {
     margin-left: 500px;
 }
 
-.benz-main .main-txt .txt1 p,
-.benz-main .main-txt .txt2 p,
-.benz-main .main-txt .txt3 p,
-.benz-main .main-txt .txt4 p {
+.artbodamain .main-txt .txt1 p,
+.artbodamain .main-txt .txt2 p,
+.artbodamain .main-txt .txt3 p,
+.artbodamain .main-txt .txt4 p {
     color: var(--color-g);
 }
 
-.benz-main video {
+.artbodamain video {
     width: 100%; 
     margin-top: 25px;
     background-color: #ddd;
     color: var(--color-b);
 }
 
-/***** benz-overview *****/
-.benz-overview {
+/***** artbodaoverview *****/
+.artbodaoverview {
     padding: 160px 70px 0;
 }
-.benz-overview .overview-title h3 {
+.artbodaoverview .overview-title h3 {
     padding-bottom: 50px; 
     font-weight: var(--weight-md);
 }
-.benz-overview .overview-title h2 {
+.artbodaoverview .overview-title h2 {
     width: 80%;
     font-family: 'pretendard';
     font-size: 50px;
@@ -98,85 +84,85 @@ body {
 
 
 /*** 목표, 기여도 ***/
-.benz-overview .overview-txt .txt1 {
+.artbodaoverview .overview-txt .txt1 {
     padding: 130px 0 80px 340px;
     display: flex;
 }
-.benz-overview .overview-txt .txt1 .goal img,
-.benz-overview .overview-txt .txt1 .contribute img {
+.artbodaoverview .overview-txt .txt1 .goal img,
+.artbodaoverview .overview-txt .txt1 .contribute img {
     padding-left: 20px;
 }
-.benz-overview .overview-txt .txt1 .goal h3,
-.benz-overview .overview-txt .txt1 .contribute h3 {
+.artbodaoverview .overview-txt .txt1 .goal h3,
+.artbodaoverview .overview-txt .txt1 .contribute h3 {
     padding-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.benz-overview .overview-txt .txt1 .goal p,
-.benz-overview .overview-txt .txt1 .contribute p {
+.artbodaoverview .overview-txt .txt1 .goal p,
+.artbodaoverview .overview-txt .txt1 .contribute p {
     padding-left: 20px;
     font-size: 20px;
     line-height: var(--lineHeight-md); /* 1.8 */
 }
 
-.benz-overview .overview-txt .txt1 .goal .list {
+.artbodaoverview .overview-txt .txt1 .goal .list {
     margin: 12px 0 12px 0;
     font-size: 16px;
     color: var(--color-g);
 }
 
 /*** 작업순서 ***/
-.benz-overview .overview-txt .txt2 {
+.artbodaoverview .overview-txt .txt2 {
     padding-left: 340px;
     overflow: hidden;
 }
-.benz-overview .overview-txt .txt2 .workflow h3 {
+.artbodaoverview .overview-txt .txt2 .workflow h3 {
     padding-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.benz-overview .overview-txt .txt2 .workflow img {
+.artbodaoverview .overview-txt .txt2 .workflow img {
     padding-left: 20px;
 }
-.benz-overview .overview-txt .txt2 .workflow .weeks {
+.artbodaoverview .overview-txt .txt2 .workflow .weeks {
     padding-left: 20px;
     display: flex;
 }
-.benz-overview .overview-txt .txt2 .workflow .weeks h4 {
+.artbodaoverview .overview-txt .txt2 .workflow .weeks h4 {
     width: 360px;
     font-weight: var(--weight-md);
     font-size: 20px;
     line-height: var(--lineHeight-md);
 }
-.benz-overview .overview-txt .txt2 .workflow .weeks .w1 p,
-.benz-overview .overview-txt .txt2 .workflow .weeks .w2 p {
+.artbodaoverview .overview-txt .txt2 .workflow .weeks .w1 p,
+.artbodaoverview .overview-txt .txt2 .workflow .weeks .w2 p {
     margin: 12px 0 12px 0;
     font-size: 16px;
     color: var(--color-g);
 }
 
-/***** benz-publishing *****/
+/***** artbodapublishing *****/
 /*** 디자인 ***/
-.benz-publishing .design {
+.artbodapublishing .design {
     padding: 130px 70px 0 70px;
     display: flex;
 }
-.benz-publishing .design .keyword {
+.artbodapublishing .design .keyword {
     width: 700px;
     height: 800px;
     padding: 200px 175px;
     background-color: #101010;
 }
-.benz-publishing .design .keyword .keyword-box {
+.artbodapublishing .design .keyword .keyword-box {
     width: 350px;
     height: 393px;
     border-radius: 20px;
     background-color: #fff;
     font-size: 20px;
 }
-.benz-publishing .design .keyword .keyword-box h3 {
+.artbodapublishing .design .keyword .keyword-box h3 {
     font-weight: var(--weight-sb);
     padding: 80px 90px 50px 60px;
 }
-.benz-publishing .design .keyword .keyword-box p {
+.artbodapublishing .design .keyword .keyword-box p {
     width: 200px;
     margin: 0 60px 20px;
     padding: 10px 0 10px 20px;
@@ -189,7 +175,7 @@ body {
 }
 
 /*** 내용 ***/
-.benz-publishing .content .typeColor {
+.artbodapublishing .content .typeColor {
     width: 1060px;
     height: 620px;
     margin-left: 20px;
@@ -200,52 +186,52 @@ body {
 }
 
 /* type */
-.benz-publishing .content .typeColor .typeColor-box {
+.artbodapublishing .content .typeColor .typeColor-box {
     font-size: 20px;
     margin-left: 70px;
     flex: 1;
 }
-.benz-publishing .content .typeColor .typeColor-box .type {
+.artbodapublishing .content .typeColor .typeColor-box .type {
     margin-top: 120px;
     display: flex;
     align-items: flex-start;
 }
-.benz-publishing .content .typeColor .typeColor-box .type h3 {
+.artbodapublishing .content .typeColor .typeColor-box .type h3 {
     width: 170px;
     font-weight: var(--weight-sb);
 }
-.benz-publishing .content .typeColor .typeColor-box .type .ko,
-.benz-publishing .content .typeColor .typeColor-box .type .en {
+.artbodapublishing .content .typeColor .typeColor-box .type .ko,
+.artbodapublishing .content .typeColor .typeColor-box .type .en {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.benz-publishing .content .typeColor .typeColor-box .type .en h4 {
+.artbodapublishing .content .typeColor .typeColor-box .type .en h4 {
     padding-left: 80px;
 }
-.benz-publishing .content .typeColor .typeColor-box .type .ko h4,
-.benz-publishing .content .typeColor .typeColor-box .type .en h4 {
+.artbodapublishing .content .typeColor .typeColor-box .type .ko h4,
+.artbodapublishing .content .typeColor .typeColor-box .type .en h4 {
     font-weight: var(--weight-md);
     color: var(--color-g);
     text-transform: lowercase;
 }
-.benz-publishing .content .typeColor .typeColor-box .type .ko .font p:nth-child(2) {
+.artbodapublishing .content .typeColor .typeColor-box .type .ko .font p:nth-child(2) {
     font-family: 'MBKCorpoS', sans-serif;
 }
-.benz-publishing .content .typeColor .typeColor-box .type .ko .font,
-.benz-publishing .content .typeColor .typeColor-box .type .en .font {
+.artbodapublishing .content .typeColor .typeColor-box .type .ko .font,
+.artbodapublishing .content .typeColor .typeColor-box .type .en .font {
     font-family: 'MBKCorpoSLight', sans-serif;
     padding-left: 40px;
     line-height: 1.7;
     display: flex;
     flex-direction: column;
 }
-.benz-publishing .content .typeColor .typeColor-box .type .en .font p {
+.artbodapublishing .content .typeColor .typeColor-box .type .en .font p {
     font-family: 'MBKCorpoA', serif;
 }
 
 /* color */
-.benz-publishing .content .typeColor .color {
+.artbodapublishing .content .typeColor .color {
     font-family: 'poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -253,15 +239,15 @@ body {
 }
 
 /* main */
-.benz-publishing .content .typeColor .color .main {
+.artbodapublishing .content .typeColor .color .main {
     display: flex;
 }
-.benz-publishing .content .typeColor .color h3 {
+.artbodapublishing .content .typeColor .color h3 {
     width: 170px;
     font-size: 20px;
     font-weight: var(--weight-sb);
 }
-.benz-publishing .content .typeColor .color .main div {
+.artbodapublishing .content .typeColor .color .main div {
     width: 130px; height: 165px;
     padding: 110px 0 0 15px;
     font-size: 16px;
@@ -270,32 +256,32 @@ body {
     display: flex;
     align-items: center;
 }
-.benz-publishing .content .typeColor .color div:nth-of-type(2),
-.benz-publishing .content .typeColor .color div:nth-of-type(3),
-.benz-publishing .content .typeColor .color div:nth-of-type(4) {
+.artbodapublishing .content .typeColor .color div:nth-of-type(2),
+.artbodapublishing .content .typeColor .color div:nth-of-type(3),
+.artbodapublishing .content .typeColor .color div:nth-of-type(4) {
     margin-left: 35px;
 }
-.benz-publishing .content .typeColor .color .color1 {
+.artbodapublishing .content .typeColor .color .color1 {
     background-color: #e5e4e5;
 }
-.benz-publishing .content .typeColor .color .color2 {
+.artbodapublishing .content .typeColor .color .color2 {
     background-color: #b3b2b3;
 }
-.benz-publishing .content .typeColor .color .color3 {
+.artbodapublishing .content .typeColor .color .color3 {
     background-color: #555555;
     color: var(--color-w);
 }
-.benz-publishing .content .typeColor .color .color4 {
+.artbodapublishing .content .typeColor .color .color4 {
     background-color: #101010;
     color: var(--color-w);
 }
 
 /* sub */
-.benz-publishing .content .typeColor .color .sub {
+.artbodapublishing .content .typeColor .color .sub {
     padding-top: 40px;
     display: flex;
 }
-.benz-publishing .content .typeColor .color .sub > div {
+.artbodapublishing .content .typeColor .color .sub > div {
     width: 130px;
     height: 82.5px;
     padding: 42px 0 0 15px;
@@ -305,34 +291,34 @@ body {
     font-size: 16px;
     border-radius: 10px;
 }
-.benz-publishing .content .typeColor .color .sub .color1 {
+.artbodapublishing .content .typeColor .color .sub .color1 {
     margin-left: 135px;
 }
-.benz-publishing .content .typeColor .color .sub .color2 {
+.artbodapublishing .content .typeColor .color .sub .color2 {
     background: linear-gradient(0deg, #6c6c6c, #2e2e2e);
     padding: 20px 0 0 15px;
     color: var(--color-w);
 }
 
 /* 설명 */
-.benz-publishing .content .txt {
+.artbodapublishing .content .txt {
     margin: 60px 0 0 360px;
     flex: 1;
 }
 
 /*** 퍼블리싱 내용 ***/
-.benz-publishing .publishing {
+.artbodapublishing .publishing {
     padding: 130px 70px 0 410px;
     display: flex;
 }
-.benz-publishing .publishing .txt1 h3 {
+.artbodapublishing .publishing .txt1 h3 {
     margin-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.benz-publishing .publishing .txt1 img {
+.artbodapublishing .publishing .txt1 img {
     padding-left: 20px;
 }
-.benz-publishing .publishing .txt1 p {
+.artbodapublishing .publishing .txt1 p {
     padding-left: 20px;
     font-family: 'pretendard';
     font-size: 20px;
@@ -340,58 +326,58 @@ body {
 }
 
 /*** 문제점+해결 내용 ***/
-.benz-publishing .problems {
+.artbodapublishing .problems {
     padding: 130px 70px 0 410px;
     display: flex;
 }
-.benz-publishing .problems .txt1 h3 {
+.artbodapublishing .problems .txt1 h3 {
     margin-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.benz-publishing .problems .txt1 > img {
+.artbodapublishing .problems .txt1 > img {
     padding-left: 20px;
 }
 
-.benz-publishing .problems .txt1 .list1 {
+.artbodapublishing .problems .txt1 .list1 {
     width: 100%;
 }
-.benz-publishing .problems .txt1 .list2,
-.benz-publishing .problems .txt1 .list3 {
+.artbodapublishing .problems .txt1 .list2,
+.artbodapublishing .problems .txt1 .list3 {
     margin-top: 40px;
 }
-.benz-publishing .problems .txt1 .list1 h4,
-.benz-publishing .problems .txt1 .list2 h4,
-.benz-publishing .problems .txt1 .list3 h4 {
+.artbodapublishing .problems .txt1 .list1 h4,
+.artbodapublishing .problems .txt1 .list2 h4,
+.artbodapublishing .problems .txt1 .list3 h4 {
     padding-left: 20px;
     font-family: 'pretendard';
     font-weight: var(--weight-md);
     font-size: 20px;
     line-height: 1.8;
 }
-.benz-publishing .problems .txt1 .list1 p,
-.benz-publishing .problems .txt1 .list2 p,
-.benz-publishing .problems .txt1 .list3 p {
+.artbodapublishing .problems .txt1 .list1 p,
+.artbodapublishing .problems .txt1 .list2 p,
+.artbodapublishing .problems .txt1 .list3 p {
     margin: 8px 0 0 20px;
     font-size: 16px;
     color: var(--color-g);
 }
 
-.benz-publishing .problems .txt1 .list1 img {
+.artbodapublishing .problems .txt1 .list1 img {
     margin-top: 20px;
 }
-.benz-publishing .problems .txt1 .list1 img:first-of-type {
+.artbodapublishing .problems .txt1 .list1 img:first-of-type {
     height: 430px;
     margin-left: 20px;
     border-radius: 10px;
 }
-.benz-publishing .problems .txt1 .list1 img:last-of-type {
+.artbodapublishing .problems .txt1 .list1 img:last-of-type {
     height: 430px;
     margin-left: 10px;
     border-radius: 10px;
 }
 
 /*** 리뷰 ***/
-.benz-publishing .review {
+.artbodapublishing .review {
     margin-top: 180px;
     padding: 100px 0 0 70px;
     display: flex;
@@ -399,11 +385,11 @@ body {
     background-color: var(--color-b);
     color: var(--color-w);
 }
-.benz-publishing .review h2 {
+.artbodapublishing .review h2 {
     font-size: 50px;
     font-weight: var(--weight-md);
 }
-.benz-publishing .review .txt ul {
+.artbodapublishing .review .txt ul {
     padding: 0 0 100px 175px;
     font-size: 20px;
     font-family: 'pretendard';
@@ -412,14 +398,14 @@ body {
 }
 
 /*** 결과물 링크/파일 ***/
-.benz-publishing .document {
+.artbodapublishing .document {
     padding: 130px 0 250px 1150px;
     font-size: 20px;
 }
-.benz-publishing .document p {
+.artbodapublishing .document p {
     padding-bottom: 15px;
 }
-.benz-publishing .document p span img {
+.artbodapublishing .document p span img {
     padding-left: 10px;
     animation: float 1.5s ease-in-out infinite;
 }
