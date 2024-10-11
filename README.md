@@ -1,3 +1,11 @@
+## 241011 금 ##
+- Mercedes-Benz 상세페이지
+  1) problem & solution 내용 추가
+
+- ArtBoda Gallery 상세페이지 제작
+  1) 완료보고서 내용 수정
+  2) 프로토타입 파일 수정
+
 ## 241009 수 ##
 - adererror 상세페이지
   1) 디테일수정
@@ -6,10 +14,6 @@
   4) back-to-top 버튼 추가
 
 - Mercedes-Benz 상세페이지 제작 완료
-
-- ArtBoda Gallery 상세페이지 제작
-  1) 완료보고서 내용 수정
-  2) 프로토타입 파일 수정
 
 ## 241008 화 ##
 - index 수정
