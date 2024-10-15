@@ -1,7 +1,16 @@
 @charset "utf-8";
 
-/* font face */
-
+/* AppleSDNeo */
+@font-face {
+    font-family: 'AppleSDGothicNeoEB';
+    src: url('../works/files/artobodagallery/AppleSDGothicNeoEB.woff2') format('woff2');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'AppleSDGothicNeoR';
+    src: url('../works/files/artobodagallery/AppleSDGothicNeoR.woff2') format('woff');
+    font-weight: normal;
+}
 
 body {
     color: var(--color-b);
@@ -150,13 +159,13 @@ body {
     width: 700px;
     height: 800px;
     padding: 200px 175px;
-    background-color: #101010;
+    background-color: #222222;
 }
 .artboda-prototype .design .keyword .keyword-box {
     width: 350px;
     height: 393px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--color-w);
     font-size: 20px;
 }
 .artboda-prototype .design .keyword .keyword-box h3 {
@@ -169,7 +178,7 @@ body {
     padding: 10px 0 10px 20px;
     font-family: 'pretendard';
     font-weight: var(--weight-md);
-    background-color: #e5e4e5;
+    background-color: #eeeeee;
     color: var(--color-b);
 
     border-radius: 30px;
@@ -177,10 +186,9 @@ body {
 
 /*** 내용 ***/
 .artboda-prototype .content .typeColor {
-    width: 1060px;
-    height: 620px;
+    height: 800px;
     margin-left: 20px;
-    background-color: #d0d0d0;
+    background-color: #CACACA;
 
     display: flex;
     flex-direction: column;
@@ -216,19 +224,18 @@ body {
     color: var(--color-g);
     text-transform: lowercase;
 }
-.artboda-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(2) {
-    font-family: 'MBKCorpoS', sans-serif;
-}
-.artboda-prototype .content .typeColor .typeColor-box .type .ko .font,
-.artboda-prototype .content .typeColor .typeColor-box .type .en .font {
-    font-family: 'MBKCorpoSLight', sans-serif;
+.artboda-prototype .content .typeColor .typeColor-box .type .ko .font {
     padding-left: 40px;
     line-height: 1.7;
     display: flex;
     flex-direction: column;
 }
-.artboda-prototype .content .typeColor .typeColor-box .type .en .font p {
-    font-family: 'MBKCorpoA', serif;
+.artboda-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(1) {
+    font-family: 'AppleSDGothicNeoEB', sans-serif;
+    font-weight: 800;
+}
+.artboda-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(2) {
+    font-family: 'AppleSDGothicNeoR', sans-serif;
 }
 
 /* color */
@@ -236,11 +243,12 @@ body {
     font-family: 'poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 /* main */
 .artboda-prototype .content .typeColor .color .main {
+    font-family: 'pretendard', sans-serif;
     display: flex;
 }
 .artboda-prototype .content .typeColor .color h3 {
@@ -257,48 +265,67 @@ body {
     display: flex;
     align-items: center;
 }
-.artboda-prototype .content .typeColor .color div:nth-of-type(2),
-.artboda-prototype .content .typeColor .color div:nth-of-type(3),
-.artboda-prototype .content .typeColor .color div:nth-of-type(4) {
+.artboda-prototype .content .typeColor .color div:nth-of-type(1){
+    margin-left: 0;
+}
+.artboda-prototype .content .typeColor .color div {
     margin-left: 35px;
 }
 .artboda-prototype .content .typeColor .color .color1 {
-    background-color: #e5e4e5;
+    background-color: var(--color-w);
 }
 .artboda-prototype .content .typeColor .color .color2 {
-    background-color: #b3b2b3;
-}
-.artboda-prototype .content .typeColor .color .color3 {
-    background-color: #555555;
-    color: var(--color-w);
-}
-.artboda-prototype .content .typeColor .color .color4 {
-    background-color: #101010;
+    background-color: #222222;
     color: var(--color-w);
 }
 
 /* sub */
 .artboda-prototype .content .typeColor .color .sub {
-    padding-top: 40px;
+    width: 900px;
+    height: 295px;
+    font-family: 'pretendard', sans-serif;
+
+    padding-top: 60px;
     display: flex;
+    flex-wrap: wrap;
 }
-.artboda-prototype .content .typeColor .color .sub > div {
+.artboda-prototype .content .typeColor .color .sub div {
     width: 130px;
     height: 82.5px;
-    padding: 42px 0 0 15px;
-    color: var(--color-w);
+    padding: 45px 0 0 15px;
+    color: var(--color-b);
     background-color: #006CD0;
 
     font-size: 16px;
     border-radius: 10px;
 }
-.artboda-prototype .content .typeColor .color .sub .color1 {
+.artboda-prototype .content .typeColor .color .sub .color1,
+.artboda-prototype .content .typeColor .color .sub .color5 {
     margin-left: 135px;
 }
+.artboda-prototype .content .typeColor .color .sub .color1 {
+    background-color: #f2f2f2;
+}
 .artboda-prototype .content .typeColor .color .sub .color2 {
-    background: linear-gradient(0deg, #6c6c6c, #2e2e2e);
-    padding: 20px 0 0 15px;
-    color: var(--color-w);
+    background-color: #eeeeee;
+}
+.artboda-prototype .content .typeColor .color .sub .color3 {
+    background-color: #e8e8e8;
+}
+.artboda-prototype .content .typeColor .color .sub .color4 {
+    background-color: #d9d9d9;
+}
+.artboda-prototype .content .typeColor .color .sub .color5 {
+    background-color: #8a8a8a;
+}
+.artboda-prototype .content .typeColor .color .sub .color6 {
+    background-color: #999999;
+}
+.artboda-prototype .content .typeColor .color .sub .color7 {
+    background-color: #eddbca;
+}
+.artboda-prototype .content .typeColor .color .sub .color8 {
+    background-color: #ff0000;
 }
 
 /* 설명 */
