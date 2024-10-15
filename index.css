@@ -179,11 +179,11 @@
     left: 37vw;
 }
 
-/*** project 3 - CONNET ***/
+/*** project 3 - Mercedes ***/
 .index-project3 {
     opacity: 0; 
     visibility: hidden;
-    background: url(./assets/images/index/index-main-pj3.jpg) no-repeat 40% 50% / cover ;
+    background: url(./assets/images/index/index-main-pj3.jpg) no-repeat 50% 35% / cover ;
 
     background-color: #034a50; /* 임시 */
     position: absolute;
@@ -245,9 +245,9 @@
     left: 70vw;
 }
 
-/*** project 4 - FiFEET ***/
+/*** project 4 - CONNET ***/
 .index-project4 {
-    opacity: 0; 
+    opacity: 0;
     visibility: hidden;
     background: url(./assets/images/index/index-main-pj4.jpg) no-repeat 50% 55% / cover;
 
@@ -268,20 +268,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .index-project4 .pj4-img {
-    width: 480px; height: 500px;
+    width: 590px;
+    height: 380px;
     overflow: hidden;
     border-radius: 10px;
     position: absolute;
-    top: 40vh;
-    left: 65vw;
+    top: 45vh;
+    left: 18vw; 
 }
-.index-project4 .pj4-img img {
-    width: 100%; height: auto;
-    transform: translateY(-80px);
+.index-project4 .pj4-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .index-project4 h1,
 .index-project4 h2,
 .index-project4 p {
@@ -292,33 +296,32 @@
     font-family: var(--primary-font-en);
     font-weight: 600;
     font-size: 75px;
-    top: 52vh;
-    left: 25vw;
+    top: 53vh;
+    left: 55vw;
 }
 .index-project4 h2 {
-    width: 165px;
+    width: 150px;
     font-family: var(--primary-font-en);
     font-size: 18px;
     font-weight: 500;
-    top: 40vh;
-    left: 53vw;
+    top: 70vh;
+    left: 60vw;
 }
 .index-project4 p {
-    width: 265px;
     font-family: var(--primary-font-ko);
+    width: 265px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    top: 20vh;
-    left: 40vw;
+    top: 25vh;
+    left: 37vw;
 }
 
-/*** project 5 - Mercedes-Benz ***/
+/*** project 5 - FIFEET ***/
 .index-project5 {
-    opacity: 0;
+    opacity: 0; 
     visibility: hidden;
     background: url(./assets/images/index/index-main-pj5.jpg) no-repeat 50% 33% / cover;
-    transform: scale(1.1);
 
     position: absolute;
     top: 0;
@@ -337,24 +340,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-
 .index-project5 .pj5-img {
-    width: 590px;
-    height: 400px;
+    width: 480px; height: 500px;
     overflow: hidden;
     border-radius: 10px;
     position: absolute;
-    top: 45vh;
-    left: 18vw; 
+    top: 40vh;
+    left: 65vw;
 }
-.index-project5 .pj5-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.index-project5 .pj5-img img {
+    width: 100%; height: auto;
+    transform: translateY(-80px);
 }
-
 .index-project5 h1,
 .index-project5 h2,
 .index-project5 p {
@@ -365,27 +364,26 @@
     font-family: var(--primary-font-en);
     font-weight: 600;
     font-size: 75px;
-    top: 53vh;
-    left: 55vw;
+    top: 52vh;
+    left: 25vw;
 }
 .index-project5 h2 {
-    width: 150px;
+    width: 165px;
     font-family: var(--primary-font-en);
     font-size: 18px;
     font-weight: 500;
-    top: 70vh;
-    left: 60vw;
+    top: 40vh;
+    left: 53vw;
 }
 .index-project5 p {
-    font-family: var(--primary-font-ko);
     width: 265px;
+    font-family: var(--primary-font-ko);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    top: 25vh;
-    left: 37vw;
+    top: 20vh;
+    left: 40vw;
 }
-
 
 /****** index-main-text ******/
 /*** 제목 + 텍스트 ***/
