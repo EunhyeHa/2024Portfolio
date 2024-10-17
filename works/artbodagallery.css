@@ -347,10 +347,7 @@ body {
     padding-left: 20px;
 }
 .artboda-prototype .prototype .txt1 p {
-    padding-left: 20px;
-    font-family: 'pretendard';
-    font-size: 20px;
-    line-height: 1.8;
+    padding: 20px 0 0 10px;
 }
 .artboda-prototype .prototype .txt2 {
     margin-left: 20px;
