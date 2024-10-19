@@ -107,21 +107,24 @@ body {
 }
 
 
-
-
 /***** about-career *****/
 .about-career {
     margin: 285px 240px 260px;
 }
 .about-career h1 {
-    margin-bottom: 190px;
+    margin-bottom: 170px;
     font-size: 55px;
     font-weight: 500;
+    line-height: 1.4;
 }
 .about-career .career-list p {
     font-size: 20px;
     margin-bottom: 25px;
     padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .about-career .career-list p:not(:last-child) {
     border-bottom: 1px #101010 solid;
@@ -132,12 +135,17 @@ body {
 }
 .about-career .career-list p span {
     margin-right: 252px;
-    position: relative;
+    position: relative; 
+}
+.about-career .career-list p .content {
+    flex-grow: 1;
 }
 
 /*** about-career-imgShowup ***/
 .about-career .career-list p:hover {
-    color: hotpink;
+    color: #326fff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 .about-career .career-list p span .img1 {
     position: absolute;
@@ -155,7 +163,6 @@ body {
     left: 0px;
 }
 .about-career .career-list p span img {
-    /* display: none; */
     width: 150px;
     margin-left: 100px;
     position: absolute;
@@ -193,25 +200,25 @@ body {
 
 .about-career .career-list-etc {
     margin: 40px 60px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
+    color: #326fff;
 }
 
 /***** about-skill *****/
 /*** list 1 ***/
 .about-skill {
-    margin: 0 70px;
+    margin-left: 70px;
 }
 .about-skill .skill-list1 {
-    margin-bottom: 50px;
-    display: flex;
     width: 100%;
+    margin-bottom: 70px;
+    display: flex;
 }
 
 /* 수정.... */
 .about-skill .skill-list1 li {
-    transition: background-color 0.5s ease, color 0.5s ease;
-
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .about-skill .skill-list1 li:hover {
     /* background: #101010;
@@ -245,18 +252,18 @@ body {
 /*** list 2 ***/
 /* BX Design */
 .about-skill .skill-list2 {
-    margin-bottom: 50px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .about-skill .skill-list2-1,
 .about-skill .skill-list2-2 {
-    flex-grow: 1;
+    width: 50%;
 }
 
 .about-skill .skill-list2 .skill-list2-1 li {
     box-sizing: border-box;
     height: 352px;
-    margin-right: 30px;
     border-left: #101010 1px solid;
 }
 .about-skill .skill-list2 .skill-list2-1 p {
@@ -279,10 +286,12 @@ body {
 /* Tools */
 .about-skill .skill-list2 .skill-list2-2 {
     display: flex;
+    margin: 0 70px;
 }
-.about-skill .skill-list2 .skill-list2-tool,
 .about-skill .skill-list2 .skill-list2-toolsImg {
-    flex-grow: 1;
+    width: 100%;
+    margin-left: 150px;
+    justify-content: space-between;
 }
 .about-skill .skill-list2 .skill-list2-2 li {
     box-sizing: border-box;

@@ -20,25 +20,35 @@ document.addEventListener('DOMContentLoaded', function () {
     gsap.registerPlugin(ScrollTrigger);
 
     const images = [
-        './assets/images/about/1.jpg',
-        './assets/images/about/2.jpg',
-        './assets/images/about/3.jpg',
-        './assets/images/about/4.jpg',
-        './assets/images/about/5.jpg',
-        './assets/images/about/6.jpg'
+        './assets/images/about/intro_11.jpeg',
+        './assets/images/about/intro_10.jpeg',
+        './assets/images/about/intro_9.jpeg',
+        './assets/images/about/intro_8.jpeg',
+        './assets/images/about/intro_7.jpeg',
+        './assets/images/about/intro_6.jpeg',
+        './assets/images/about/intro_5.jpeg',
+        './assets/images/about/intro_4.jpeg',
+        './assets/images/about/intro_3.jpeg',
+        './assets/images/about/intro_2.jpeg',
+        './assets/images/about/intro_1.jpeg'
     ];
 
     images.forEach((image, index) => {
         gsap.to('#txt-img', {
             backgroundImage: `url(${image})`,
+            opacity: 0, // 초기 값은 투명하게 시작
             scrollTrigger: {
                 trigger: '.about-intro',
                 start: () => `top top+=${index * 100}vh`,
                 end: () => `top top+=${(index + 1) * 100}vh`,
-
                 scrub: true,
                 markers: true,
-                toggleActions: 'play none none reverse'
+                toggleActions: 'play none none reverse',
+                onUpdate: self => {
+                    // 스크롤 진행 비율을 계산하여 opacity를 조절
+                    const progress = self.progress;
+                    gsap.to('#txt-img', { opacity: 1 - progress });
+                }
             }
         });
     });
@@ -59,19 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
     });
-
 });
+
 
 // career-imgShowup
-document.addEventListener('DOMContentLoaded', function() {
-    const careerItems = document.querySelectorAll('.about-career .career-list p');
-
-    careerItems.forEach(item => {
-        const img = item.querySelector('span img');
-
-        item.addEventListener('mouseover', function() {
-            img.classList.add('visible');
-        });
+let careerItems = document.querySelectorAll('.about-career .career-list p');
+careerItems.forEach(item => {
+    let img = item.querySelector('span img');
+    item.addEventListener('mouseover', function() {
+        img.classList.add('visible');
     });
 });
-
