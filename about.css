@@ -29,7 +29,6 @@ body {
     width: 130px;
     height: 180px;
     white-space: nowrap;
-    /* overflow: hidden; */
 }
 
 .about-main .main-title h1 .slide {
@@ -38,11 +37,16 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.about-main .main-title h1 .slide.active {
-    /* opacity: 1; */
-}
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.about-main .main-title h1 .slide.show {
+    opacity: 1;
+}
 
 /*** gsap ***/
 /***** about-intro *****/

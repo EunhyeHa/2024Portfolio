@@ -1,3 +1,8 @@
+## 241019 토 ##
+- About Me 페이지
+  1) 이미지 슬라이드 script 수정
+  2) intro scrollEvent 수정
+
 ## 241018 금 ##
 - About Me 페이지
   1) 이미지 교체
