@@ -1,21 +1,5 @@
 // title-imgSlide
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("slide");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";  
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}    
-//     slides[slideIndex-1].style.display = "block";  
-//     setTimeout(showSlides, 2000);
-}
-
-// title-imgSlide
-let slideContainer = $('.main-title .slideshow-container');
+let slideContainer = $('.main-title .container');
 let slide = slideContainer.find('.slide');
 let slideCount = slide.length;
 let currentIdx = 0;
@@ -24,7 +8,7 @@ slide.eq(currentIdx).addClass('show');
 setInterval(showNextSlide, 2000);
 
 function showNextSlide(){
-    let nextIdx = (currentIdx+1)%slideCount;
+    let nextIdx = (currentIdx + 1) % slideCount;
     slide.eq(currentIdx).removeClass('show');
     slide.eq(nextIdx).addClass('show');
     currentIdx = nextIdx;
@@ -75,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 opacity: 1, y: 0,
                 scrollTrigger: {
-                    trigger: '.about-intro',
-                    start: () => `top top+=${index * 100}vh`,
-                    end: () => `top top+=${(index + 1) * 100}vh`,
+                    trigger: p,
+                    start: () => "top 80%",
+                    end: () => "top 50%",
                     scrub: true,
                     markers: false,
                     toggleActions: 'play none none reverse'
