@@ -8,7 +8,6 @@ body {
 /* menu 클릭시, 글자색 변경은
 menu -> css 코드 추가
 github, mail -> 스크립트 추가
-
 */
 
 /* 
@@ -27,7 +26,7 @@ z-index 모든 페이지에서 최상위에 오도록
   background-color: transparent;
   z-index: 9000;
   overflow: hidden;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   pointer-events: none;
   opacity: 0;
   transform: translateX(-100%);
@@ -132,7 +131,7 @@ z-index 모든 페이지에서 최상위에 오도록
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: 0.6s ease-in-out;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a.flipped {
@@ -199,11 +198,11 @@ z-index 모든 페이지에서 최상위에 오도록
 .allPage-header .pc-main-nav .menu-wrapper .menu-logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu-logo img {
-  height: 26px;
+  height: 24px;
 }
 
 /***** right-top *****/

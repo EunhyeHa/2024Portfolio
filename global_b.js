@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuMain = document.querySelector(".menu-main");
     let menuSide = document.querySelector(".menu-side");
     let frameEffect = document.getElementById("frameEffect");
-    const hiddenToggle = document.querySelector('.menu-main'); // hidden-toggle
+    let logo = document.querySelector(".menu-logo img");
+    const hiddenToggle = document.querySelector('.menu-main');
 
     // 이미지 경로 설정
     const imagePaths = {
@@ -32,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         githubLink.style.backgroundColor = isFlipped ? 'rgba(128, 128, 128, 0.5)' : '';
         githubLink.style.borderRadius = '30px'; 
 
+        logo.src = isFlipped ? './assets/images/global/logo.png' : './assets/images/global/logo-b.png';
+        
         // Mail 아이콘 이미지 및 스타일 변경
         const mailLink = document.querySelector('.menu-item2 a img');
         mailLink.src = isFlipped ? './assets/images/global/icon-mail-w.png' : './assets/images/global/icon-mail-b.png'; // 메뉴 열림 상태에 따라 이미지 변경
