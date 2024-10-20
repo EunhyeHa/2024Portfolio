@@ -149,7 +149,7 @@ body {
 
 /*** about-career-imgShowup ***/
 .about-career .career-list p:hover {
-    color: #326fff;
+    color: #0031e2;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -208,7 +208,7 @@ body {
     margin: 40px 60px;
     font-size: 18px;
     line-height: 1.7;
-    color: #326fff;
+    color: #0031e2;
 }
 
 /***** about-skill *****/
