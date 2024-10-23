@@ -1,9 +1,15 @@
 ## 241020 일 ##
 - 로고 작업
   1) favicon 적용
+  - 적용 안 될 경우 : command + shift + R (캐시 삭제)
   2) 전체 페이지 적용 및 수정
 
-- glbal 수정
+- global 수정
+  1) global_w : 모든 works에 적용(경로주의)
+  2) hidden-toggle 메뉴 순서 변경
+
+- Connet 상세페이지 작업
+
 
 ## 241019 토 ##
 - About Me 페이지
