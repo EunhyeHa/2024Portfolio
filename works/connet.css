@@ -1,6 +1,30 @@
 @charset "utf-8";
 
 /* font */
+/* ko */
+@font-face {
+    font-family: 'SUIT-M';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SUIT-SB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'SUIT-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'SUIT-EB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+}
+
+/* en */
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 body {
@@ -83,22 +107,22 @@ body {
 }
 
 
-/*** 목표, 기여도 ***/
+/*** 목표, 리서치 ***/
 .connetoverview .overview-txt .txt1 {
     padding: 130px 0 80px 340px;
     display: flex;
 }
 .connetoverview .overview-txt .txt1 .goal img,
-.connetoverview .overview-txt .txt1 .contribute img {
+.connetoverview .overview-txt .txt1 .research img {
     padding-left: 20px;
 }
 .connetoverview .overview-txt .txt1 .goal h3,
-.connetoverview .overview-txt .txt1 .contribute h3 {
+.connetoverview .overview-txt .txt1 .research h3 {
     padding-bottom: 20px;
     font-weight: var(--weight-md);
 }
 .connetoverview .overview-txt .txt1 .goal p,
-.connetoverview .overview-txt .txt1 .contribute p {
+.connetoverview .overview-txt .txt1 .research p {
     padding-left: 20px;
     font-size: 20px;
     line-height: var(--lineHeight-md); /* 1.8 */
@@ -120,7 +144,7 @@ body {
     font-weight: var(--weight-md);
 }
 .connetoverview .overview-txt .txt2 .workflow img {
-    padding-left: 20px;
+    padding-left: 20px
 }
 .connetoverview .overview-txt .txt2 .workflow .weeks {
     padding-left: 20px;
@@ -132,9 +156,10 @@ body {
     font-size: 20px;
     line-height: var(--lineHeight-md);
 }
-.connetoverview .overview-txt .txt2 .workflow .weeks .w1 p,
-.connetoverview .overview-txt .txt2 .workflow .weeks .w2 p,
-.connetoverview .overview-txt .txt2 .workflow .weeks .w3 p {
+.connetoverview .overview-txt .txt2 .workflow .weeks .w1-2 p,
+.connetoverview .overview-txt .txt2 .workflow .weeks .w3 p,
+.connetoverview .overview-txt .txt2 .workflow .weeks .w4 p,
+.connetoverview .overview-txt .txt2 .workflow .weeks .w5 p {
     margin: 12px 0 12px 0;
     font-size: 16px;
     color: var(--color-g);
@@ -215,18 +240,42 @@ body {
     color: var(--color-g);
     text-transform: lowercase;
 }
-.connet-prototype .content .typeColor .typeColor-box .type .ko .font {
+.connet-prototype .content .typeColor .typeColor-box .type .ko .font,
+.connet-prototype .content .typeColor .typeColor-box .type .en .font {
     padding-left: 40px;
     line-height: 1.7;
     display: flex;
     flex-direction: column;
 }
+/* ko - SUIT */
 .connet-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(1) {
-    font-family: 'AppleSDGothicNeoEB', sans-serif;
-    font-weight: 800;
+    font-family: 'SUIT-Medium', sans-serif;
 }
 .connet-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(2) {
-    font-family: 'AppleSDGothicNeoR', sans-serif;
+    font-family: 'SUIT-SB', sans-serif;
+}
+.connet-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(3) {
+    font-family: 'SUIT-B', sans-serif;
+}
+.connet-prototype .content .typeColor .typeColor-box .type .ko .font p:nth-child(4) {
+    font-family: 'SUIT-EB', sans-serif;
+}
+/* en - Montserrat */
+.connet-prototype .content .typeColor .typeColor-box .type .en .font p:nth-child(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.connet-prototype .content .typeColor .typeColor-box .type .en .font p:nth-child(2) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.connet-prototype .content .typeColor .typeColor-box .type .en .font p:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.connet-prototype .content .typeColor .typeColor-box .type .en .font p:nth-child(4) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 /* color */
@@ -263,60 +312,73 @@ body {
     margin-left: 35px;
 }
 .connet-prototype .content .typeColor .color .color1 {
-    background-color: var(--color-w);
+    background-color: #1E2426;
+    color: #AEBCC1;
 }
 .connet-prototype .content .typeColor .color .color2 {
-    background-color: #222222;
-    color: var(--color-w);
+    background-color: #374549;
+    color: #AEBCC1;;
+}
+.connet-prototype .content .typeColor .color .color3 {
+    background-color: #AEBCC1;
+    color: #1E2426;
+}
+.connet-prototype .content .typeColor .color .color4 {
+    background-color: var(--color-w);
+    color: #1E2426;
 }
 
 /* sub */
 .connet-prototype .content .typeColor .color .sub {
-    width: 900px;
+    width: 800px;
     height: 295px;
-    font-family: 'pretendard', sans-serif;
 
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
 }
 .connet-prototype .content .typeColor .color .sub div {
-    width: 130px;
-    height: 82.5px;
-    padding: 45px 0 0 15px;
+    width: 194.75px;
+    height: 67px;
+    margin-left: 20px;
+    /* padding: 45px 0 0 15px; */
     color: var(--color-b);
-    background-color: #006CD0;
 
     font-size: 16px;
     border-radius: 10px;
 }
 .connet-prototype .content .typeColor .color .sub .color1,
-.connet-prototype .content .typeColor .color .sub .color5 {
+.connet-prototype .content .typeColor .color .sub .color4 {
     margin-left: 135px;
 }
 .connet-prototype .content .typeColor .color .sub .color1 {
-    background-color: #f2f2f2;
+    background-color: #54FC4F;
+}
+.connet-prototype .content .typeColor .color .sub .color1 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 30px;
+
+    font-family: ;
+    background-color: #000000;
+    color: #54FC4F;
 }
 .connet-prototype .content .typeColor .color .sub .color2 {
-    background-color: #eeeeee;
+    background-color: #ED8ECD;
 }
 .connet-prototype .content .typeColor .color .sub .color3 {
-    background-color: #e8e8e8;
+    background-color: #70D8EE;
 }
 .connet-prototype .content .typeColor .color .sub .color4 {
-    background-color: #d9d9d9;
+    background-color: #C6E649;
 }
 .connet-prototype .content .typeColor .color .sub .color5 {
-    background-color: #8a8a8a;
+    background-color: #F5EB67;
 }
 .connet-prototype .content .typeColor .color .sub .color6 {
-    background-color: #999999;
-}
-.connet-prototype .content .typeColor .color .sub .color7 {
-    background-color: #eddbca;
-}
-.connet-prototype .content .typeColor .color .sub .color8 {
-    background-color: #ff0000;
+    background-color: #1934F2;
 }
 
 /* 설명 */
