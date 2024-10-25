@@ -175,13 +175,13 @@ body {
     width: 700px;
     height: 800px;
     padding: 200px 175px;
-    background-color: #222222;
+    background-color: #1E2426;
 }
 .connet-prototype .design .keyword .keyword-box {
     width: 350px;
     height: 393px;
     border-radius: 20px;
-    background-color: var(--color-w);
+    background-color: #AEBCC1;
     font-size: 20px;
 }
 .connet-prototype .design .keyword .keyword-box h3 {
@@ -194,7 +194,7 @@ body {
     padding: 10px 0 10px 20px;
     font-family: 'pretendard';
     font-weight: var(--weight-md);
-    background-color: #eeeeee;
+    background-color: var(--color-w);
     color: var(--color-b);
 
     border-radius: 30px;
@@ -204,7 +204,7 @@ body {
 .connet-prototype .content .typeColor {
     height: 800px;
     margin-left: 20px;
-    background-color: #CACACA;
+    background-color: #E0E0E0;
 
     display: flex;
     flex-direction: column;
@@ -331,9 +331,9 @@ body {
 /* sub */
 .connet-prototype .content .typeColor .color .sub {
     width: 800px;
-    height: 295px;
+    height: 230px;
 
-    padding-top: 60px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -341,8 +341,6 @@ body {
     width: 194.75px;
     height: 67px;
     margin-left: 20px;
-    /* padding: 45px 0 0 15px; */
-    color: var(--color-b);
 
     font-size: 16px;
     border-radius: 10px;
@@ -351,6 +349,9 @@ body {
 .connet-prototype .content .typeColor .color .sub .color4 {
     margin-left: 135px;
 }
+.connet-prototype .content .typeColor .color .sub p img {
+    width: 100%;
+}
 .connet-prototype .content .typeColor .color .sub .color1 {
     background-color: #54FC4F;
 }
@@ -358,27 +359,64 @@ body {
     width: 146px;
     height: 100%;
     border-radius: 10px 0 0 10px;
-    padding: 10px;
-    font-size: 30px;
+    padding: 15px;
 
-    font-family: ;
     background-color: #000000;
-    color: #54FC4F;
 }
 .connet-prototype .content .typeColor .color .sub .color2 {
     background-color: #ED8ECD;
 }
+.connet-prototype .content .typeColor .color .sub .color2 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 22px 10px;
+
+    background-color: #EAE8CE;
+}
 .connet-prototype .content .typeColor .color .sub .color3 {
     background-color: #70D8EE;
+}
+.connet-prototype .content .typeColor .color .sub .color3 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 23px 7px;
+
+    background-color: #C743B5;
 }
 .connet-prototype .content .typeColor .color .sub .color4 {
     background-color: #C6E649;
 }
+.connet-prototype .content .typeColor .color .sub .color4 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 15px 10px;
+
+    background-color: #DA3821;
+}
 .connet-prototype .content .typeColor .color .sub .color5 {
     background-color: #F5EB67;
 }
+.connet-prototype .content .typeColor .color .sub .color5 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 23px 10px;
+
+    background-color: #A1A099;
+}
 .connet-prototype .content .typeColor .color .sub .color6 {
     background-color: #1934F2;
+}
+.connet-prototype .content .typeColor .color .sub .color6 p {
+    width: 146px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 22px 10px;
+
+    background-color: #FF7829;
 }
 
 /* 설명 */
@@ -401,6 +439,9 @@ body {
 }
 .connet-prototype .prototype .txt1 p {
     padding: 20px 0 0 10px;
+}
+.connet-prototype .prototype .txt1 p > img {
+    width: 895px;
 }
 .connet-prototype .prototype .txt2 {
     margin-left: 20px;
