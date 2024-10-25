@@ -30,6 +30,7 @@
 body {
     color: var(--color-b);
     text-transform: capitalize;
+    overflow-x: hidden;
 }
 
 /***** connetmain *****/
@@ -67,11 +68,24 @@ body {
     color: var(--color-g);
 }
 
-.connetmain video {
-    width: 100%; 
+.connetmain .main-content {
+    width: 100%;
     margin-top: 25px;
-    background-color: #ddd;
-    color: var(--color-b);
+
+    display: flex;
+}
+.connetmain .main-content video {
+    width: 70%;
+    scale: 1.2;
+    transform: translateX(-2%);
+    position: relative;
+    z-index: -1;
+}
+.connetmain .main-content img {
+    width: 33%;
+    transform: translate(-7%);
+
+    background-color: #fff;
 }
 
 /***** connetoverview *****/
