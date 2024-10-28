@@ -57,11 +57,20 @@ body {
     color: var(--color-g);
 }
 
-.benz-main video {
-    width: 100%; 
+.benz-main .main-content {
+    width: 100%;
     margin-top: 25px;
-    background-color: #ddd;
-    color: var(--color-b);
+    padding: 100px;
+    background-color: #101010;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benz-main .main-content video {
+    width: 90%;
+    background-color: var(--color-b);
+    border-radius: 10px;
 }
 
 /***** benz-overview *****/
@@ -86,7 +95,7 @@ body {
     position: relative;
     color: #fff;
     display: inline-block;
-    background-image: linear-gradient(to right, #0000c5 100%, transparent 0%);
+    background-image: linear-gradient(to right, #2e2e2e 100%, transparent 0%);
     background-position: 0 100%;
     background-size: 0% 100%;
     background-repeat: no-repeat;
@@ -467,19 +476,24 @@ body {
 .next-project .thumbnail a > img {
     height: 850px;
     object-fit: cover;
+    object-position: 51%;
     overflow: hidden;
     border-radius: 10px;
 }
 .next-project .thumbnail p {
-    padding: 30px 0;
+    padding: 30px 0 130px 0;
 }
 
 /***** back-to-top *****/
 .back-to-top { 
     position: absolute;
     right: 70px;
-    bottom: 30px;
+    bottom: 50px;
 }
 .back-to-top img {
     width: 50px;
+    transition: 0.2s ease-in-out;
+}
+.back-to-top a img:hover {
+    scale: 1.1;
 }
