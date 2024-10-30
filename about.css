@@ -15,29 +15,33 @@ body {
 }
 .about-main .main-title h1 {
     width: 100%;
-    font-size: 120px;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 110px;
+    font-weight: var(--weight-rg);
 }
 .about-main .main-title h1 video {
     width: 130px;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
+    vertical-align: middle;
 }
 
 /* 이미지 슬라이드쇼 */
+.about-main .main-title .slide-wrapper {
+    margin: -40px;
+}
+
 .about-main .main-title .slide-wrapper .container {
     width: 130px;
-    height: 180px;
+    height: 160px;
     white-space: nowrap;
     display: inline-block;
     position: relative;
 }
 
 .about-main .main-title .slide-wrapper .slide {
-    margin-top: 40px;
     width: 100%;
     height: 100%;
+    margin-top: 40px;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -207,8 +211,9 @@ body {
 .about-career .career-list-etc {
     margin: 40px 60px;
     font-size: 18px;
+    font-weight: var(--weight-sb);
     line-height: 1.7;
-    color: #0031e2;
+    color: var(--color-main);
 }
 
 /***** about-skill *****/
@@ -221,18 +226,18 @@ body {
     margin-bottom: 70px;
     display: flex;
 }
-
-/* 수정.... */
-.about-skill .skill-list1 li {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .about-skill .skill-list1 li {
     box-sizing: border-box;
     width: 425px;
     height: 352px;
     margin-right: 30px;
     border-left: #101010 1px solid;
+
+    transition: 0.2s ease-in-out;
+}
+.about-skill .skill-list1 li:hover {
+    color: var(--color-main);
+    border-left: var(--color-main) 1px solid;
 }
 .about-skill .skill-list1 li p {
     height: 130px;
@@ -267,6 +272,13 @@ body {
     box-sizing: border-box;
     height: 352px;
     border-left: #101010 1px solid;
+
+    transition: 0.2s ease-in-out;
+}
+.about-skill .skill-list2 .skill-list2-1 li:hover,
+.about-skill .skill-list2 .skill-list2-2 li:hover {
+    color: var(--color-main);
+    border-left: var(--color-main) 1px solid;
 }
 .about-skill .skill-list2 .skill-list2-1 p {
     width: 425px;
@@ -299,6 +311,8 @@ body {
     box-sizing: border-box;
     height: 352px;
     border-left: #101010 1px solid;
+
+    transition: 0.2s ease-in-out;
 }
 .about-skill .skill-list2 .skill-list2-2 p {
     width: 425px;
@@ -306,7 +320,7 @@ body {
     line-height: 1.7;
     margin-left: 25px;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 .about-skill .skill-list2 .skill-list2-2 span {
     width: 425px;
@@ -377,7 +391,7 @@ body {
 }
 
 .about-footer .footer-mail .mail:hover {
-    background-color: #101010;
+    background-color: var(--color-main);
     color: #fff;
     animation-play-state: paused;
 }

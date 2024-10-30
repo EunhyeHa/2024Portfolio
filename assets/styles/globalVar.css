@@ -26,7 +26,6 @@
 --size-xxl: 25px;
 
 /*** weight ***/
-/* --weight-xs: 400; */
 --weight-rg: 400;
 --weight-md: 500;
 --weight-sb: 600;
@@ -37,7 +36,7 @@
 --color-w: #fff;
 --color-g: #aaaaaa;
 --color-lg: #rgba(128, 128, 128, 0.5);
-/* --color-main: #0031e2; */
+--color-main: #0031e2;
 
 /****** z-index ******/
 /* 1: 가장 위에 올라올 것, 9: 가장 아래 내려갈 것 */
