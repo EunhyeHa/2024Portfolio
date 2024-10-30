@@ -1,3 +1,11 @@
+## 241030 수 ##
+- Works 작업
+  1) FIFEET 상세페이지 작업
+
+- index, global, about me 작업
+  1) 디테일 수정
+  2) 썸네일 이미지 교체
+
 ## 241029 화 ##
 - Works 작업
   1) FIFEET 상세페이지 작업

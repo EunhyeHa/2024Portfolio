@@ -1,11 +1,11 @@
 /* menu 제외 */
 ::-moz-selection {
-  background: var(--color-g);
-  color: var(--color-b);
+  background: #0031e2;
+  color: var(--color-w);
 }
   ::selection {
-  background-color: var(--color-g);
-  color: var(--color-b);
+  background-color: #0031e2;
+  color: var(--color-w);
 }
 
 html,
