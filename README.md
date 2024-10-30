@@ -5,6 +5,9 @@
 - index, global, about me 작업
   1) 디테일 수정
   2) 썸네일 이미지 교체
+  3) transition 적용
+
+- globalVar 수정 및 적용
 
 ## 241029 화 ##
 - Works 작업
