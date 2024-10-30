@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mpj2: "./assets/images/global/menu-pj2-img.jpg",
         mpj3: "./assets/images/global/menu-pj3-img.jpg",
         mpj4: "./assets/images/global/menu-pj4-img.jpg",
-        mpj5: "./assets/images/global/menu-pj5-img.jpg" // 나중에 추가
+        mpj5: "./assets/images/global/menu-pj5-img.jpg"
     };
 
     let currentImageClass = ''; // 현재 로드된 이미지 클래스

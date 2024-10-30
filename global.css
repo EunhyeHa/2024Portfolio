@@ -3,13 +3,17 @@ body {
   font-family: var(--primary-font-en);
   overflow: hidden;
   color: var(--color-w);
-  background: tomato;
   position: relative;
 }
 
 /* 
 z-index 모든 페이지에서 최상위에 오도록 
 단위: 9000, 9990, 9991, 9999, 99999
+*/
+
+/*
+  공통 적용
+  transition: 0.2s ease-in-out;
 */
 
 /****** header ******/
@@ -112,6 +116,8 @@ z-index 모든 페이지에서 최상위에 오도록
   z-index: 999999;
 
   perspective: 1000px;
+
+  transition: 0.2s ease-in-out;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu a {
@@ -199,6 +205,8 @@ z-index 모든 페이지에서 최상위에 오도록
   background-color: rgba(128, 128, 128, 0.5);
   border: rgba(128, 128, 128, 0.1) solid 1px;
   border-radius: 50px;
+
+  transition: 0.2s ease-in-out;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu-item1 a {
@@ -220,6 +228,8 @@ z-index 모든 페이지에서 최상위에 오도록
   border: rgba(128, 128, 128, 0.1) solid 1px;
   border-radius: 50px;
   margin-left: 5px;
+
+  transition: 0.2s ease-in-out;
 }
 
 .allPage-header .pc-main-nav .menu-wrapper .menu-item2:hover {
@@ -309,6 +319,8 @@ z-index 모든 페이지에서 최상위에 오도록
   color: #fff;
   display: flex;
   align-items: center;
+
+  transition: 0.2s ease-in-out;
 }
 
 .menu-main .menu-wrapper .menu-inner2 ul li:not(:first-child) {

@@ -226,10 +226,6 @@ body {
 .about-skill .skill-list1 li {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.about-skill .skill-list1 li:hover {
-    /* background: #101010;
-    color: #fff; */
-}
 
 .about-skill .skill-list1 li {
     box-sizing: border-box;
