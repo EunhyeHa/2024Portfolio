@@ -1,3 +1,9 @@
+## 241031 목 ##
+- Works 작업
+  1) FIFEET 상세페이지 작업
+
+- GlobalVar, Reset, 
+
 ## 241030 수 ##
 - Works 작업
   1) FIFEET 상세페이지 작업
@@ -8,6 +14,8 @@
   3) transition 적용
 
 - globalVar 수정 및 적용
+
+- open graph 생성 및 적용
 
 ## 241029 화 ##
 - Works 작업
