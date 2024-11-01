@@ -75,28 +75,22 @@ body {
     line-height: 1.4;
 }
 
-/*** highlight ***/
-.highlight {
-    padding: 0 5px;
-    position: relative;
-    color: #fff;
-    display: inline-block;
-    background-image: linear-gradient(to right, #0000c5 100%, transparent 0%);
-    background-position: 0 100%;
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-    transition: background-size 1.5s ease-in-out;
-}
-.animate {
-    background-size: 100% 100%;
-}
-
-
-/*** 목표, 기여도 ***/
+/*** 리서치 1 ***/
 .fifeetoverview .overview-txt .txt1 {
     padding: 130px 0 80px 340px;
     display: flex;
 }
+.fifeetoverview .overview-txt .txt1 .research {
+    position: relative;
+}
+.fifeetoverview .overview-txt .txt1 .research .content {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    font-size: 14px;
+    color: var(--color-g);
+}
+
 .fifeetoverview .overview-txt .txt1 .research img,
 .fifeetoverview .overview-txt .txt1 .check img {
     padding-left: 20px;
@@ -106,45 +100,75 @@ body {
     padding-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.fifeetoverview .overview-txt .txt1 .research p,
+.fifeetoverview .overview-txt .txt1 .research p > img,
+.fifeetoverview .overview-txt .txt1 .check p > img {
+    margin: 20px 0 0 70px;
+    width: 620px;
+}
+.fifeetoverview .overview-txt .txt1 .check h4 {
+    margin: 20px 0 20px 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #CEFF4A;
+    line-height: 2;
+}
 .fifeetoverview .overview-txt .txt1 .check p {
+    width: 360px;
     padding-left: 20px;
     font-size: 20px;
-    line-height: var(--lineHeight-md); /* 1.8 */
+    font-family: var(--primary-font-ko);
+    line-height: var(--lineHeight-md);
 }
-
-.fifeetoverview .overview-txt .txt1 .research .list {
-    margin: 12px 0 12px 0;
+.fifeetoverview .overview-txt .txt1 .check p span {
     font-size: 16px;
     color: var(--color-g);
 }
 
-/*** 작업순서 ***/
+/*** 리서치 2 ***/
 .fifeetoverview .overview-txt .txt2 {
     padding-left: 340px;
-    overflow: hidden;
+    display: flex;
 }
-.fifeetoverview .overview-txt .txt2 .workflow h3 {
+.fifeetoverview .overview-txt .txt2 .research {
+    position: relative;
+}
+.fifeetoverview .overview-txt .txt2 .research .content {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    font-size: 14px;
+    color: var(--color-g);
+}
+
+.fifeetoverview .overview-txt .txt2 .research img,
+.fifeetoverview .overview-txt .txt2 .check img {
+    padding-left: 20px;
+}
+.fifeetoverview .overview-txt .txt2 .research h3,
+.fifeetoverview .overview-txt .txt2 .check h3 {
     padding-bottom: 20px;
     font-weight: var(--weight-md);
 }
-.fifeetoverview .overview-txt .txt2 .workflow img {
-    padding-left: 20px;
+.fifeetoverview .overview-txt .txt2 .research p > img,
+.fifeetoverview .overview-txt .txt2 .check p > img {
+    margin: 20px 0 0 20px;
+    width: 670px;
 }
-.fifeetoverview .overview-txt .txt2 .workflow .weeks {
-    padding-left: 20px;
-    display: flex;
-}
-.fifeetoverview .overview-txt .txt2 .workflow .weeks h4 {
-    width: 360px;
-    font-weight: var(--weight-md);
+.fifeetoverview .overview-txt .txt2 .check h4 {
+    margin: 20px 0 20px 20px;
+    padding-left: 10px;
     font-size: 20px;
+    background-color: #CEFF4A;
+    line-height: 2;
+}
+.fifeetoverview .overview-txt .txt2 .check p {
+    width: 360px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--primary-font-ko);
     line-height: var(--lineHeight-md);
 }
-.fifeetoverview .overview-txt .txt2 .workflow .weeks .w1 p,
-.fifeetoverview .overview-txt .txt2 .workflow .weeks .w2 p,
-.fifeetoverview .overview-txt .txt2 .workflow .weeks .w3 p {
-    margin: 12px 0 12px 0;
+.fifeetoverview .overview-txt .txt2 .check p span {
     font-size: 16px;
     color: var(--color-g);
 }

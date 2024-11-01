@@ -1,9 +1,14 @@
+## 241101 금 ##
+- Works 작업
+  1) FIFEET 상세페이지 삽입 영상 작업
+  2) 퍼블리싱 작업ing..
+  
 ## 241031 목 ##
 - Works 작업
   1) FIFEET 상세페이지 작업
   2) 상세페이지 삽입 영상 작업..
 
-- GlobalVar, Reset, 
+- GlobalVar, Reset 수정
 
 ## 241030 수 ##
 - Works 작업
