@@ -36,7 +36,7 @@
 --color-b: #101010;
 --color-w: #fff;
 --color-g: #aaaaaa;
---color-lg: #rgba(128, 128, 128, 0.5);
+--color-lg: rgba(128, 128, 128, 0.5);
 --color-main: #0031e2;
 
 /****** z-index ******/
@@ -53,8 +53,6 @@
 --lineHeight-sm: 1.4;
 --lineHeight-nm: 1.6;
 --lineHeight-md: 1.8;
-/* --lineHeight-lg: 1;
---lineHeight-xxl: 3; */
 
 /****** 기타 ******/
 /* --full-size: 100%;

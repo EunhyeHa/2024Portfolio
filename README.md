@@ -6,6 +6,9 @@
   1) hidden-toggle 영역
   - About me, 작업일지 썸네일 교체
 
+- globalVar 순차적으로 적용
+  1) index, global, global_b, about
+
 
 ## 241106 수 ##
 - Works 작업

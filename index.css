@@ -1,4 +1,7 @@
 @charset "utf-8";
+* {
+    font-family: var(--primary-font-en);
+}
 
 /* z-index : 1,2 사용 */
 /****** index-main ******/
@@ -14,8 +17,7 @@
 /* index-main-list */
 .index-main .list-wrapper {
     font-size: 15px;
-    font-family: var(--primary-font-en);
-    color: #fff;
+    color: var(--color-w);
     padding-left: 70px;
 
     position: relative;
@@ -26,7 +28,7 @@
     flex-direction: column;
 }
 .index-main .list-wrapper ul li:not(:first-child) {
-    max-width: fit-content; /* 텍스트 길이에 맞도록 */
+    max-width: fit-content; /* 텍스트 길이에 맞게 */
     align-self: flex-start;
     height: 35px;
     margin-top: 10px;
@@ -34,7 +36,7 @@
     text-align: left;
     letter-spacing: 0.5px;
     border: rgba(128, 128, 128, 0.1) solid 1px;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: var(--color-lg);
     border-radius: 30px;
     
     transition: 0.2s ease-in-out;
@@ -83,20 +85,18 @@
 .index-project1 h2,
 .index-project1 p {
     position: absolute;
-    color: #ffffff;
+    color: var(--color-w)
 }
 .index-project1 h1 {
-    font-family: var(--primary-font-en);
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     font-size: 75px;
     top: 65vh;
     left: 20vw;
 }
 .index-project1 h2 {
     width: 150px;
-    font-family: var(--primary-font-en);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--weight-md);
     top: 25vh;
     left: 35vw;
 }
@@ -104,7 +104,7 @@
     width: 265px;
     font-family: var(--primary-font-ko);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-rg);
     line-height: 1.4;
     top: 73vh;
     left: 70vw;
@@ -153,20 +153,18 @@
 .index-project2 h2,
 .index-project2 p {
     position: absolute;
-    color: #ffffff;
+    color: var(--color-w)
 }
 .index-project2 h1 {
-    font-family: var(--primary-font-en);
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     font-size: 75px;
     top: 53vh;
     left: 55vw;
 }
 .index-project2 h2 {
     width: 150px;
-    font-family: var(--primary-font-en);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--weight-md);
     top: 70vh;
     left: 60vw;
 }
@@ -174,7 +172,7 @@
     width: 265px;
     font-family: var(--primary-font-ko);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-rg);
     line-height: 1.4;
     top: 25vh;
     left: 37vw;
@@ -186,7 +184,6 @@
     visibility: hidden;
     background: url(./assets/images/index/index-main-pj3.jpg) no-repeat 50% 35% / cover ;
 
-    background-color: #034a50; /* 임시 */
     position: absolute;
     top: 0;
     left: 0;
@@ -218,29 +215,26 @@
 .index-project3 h2,
 .index-project3 p {
     position: absolute;
-    color: #ffffff;
+    color: var(--color-w);
 }
 .index-project3 h1 {
-    font-family: var(--primary-font-en);
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     font-size: 75px;
     line-height: 1.4;
     top: 65vh;
     left: 20vw;
 }
 .index-project3 h2 {
-    font-family: var(--primary-font-en);
     width: 150px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--weight-md);
     top: 25vh;
     left: 35vw;
 }
 .index-project3 p {
-    font-family: var(--primary-font-ko);
     width: 265px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-rg);
     line-height: 1.4;
     top: 73vh;
     left: 70vw;
@@ -291,20 +285,18 @@
 .index-project4 h2,
 .index-project4 p {
     position: absolute;
-    color: #ffffff;
+    color: var(--color-w);
 }
 .index-project4 h1 {
-    font-family: var(--primary-font-en);
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     font-size: 75px;
     top: 53vh;
     left: 55vw;
 }
 .index-project4 h2 {
     width: 150px;
-    font-family: var(--primary-font-en);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--weight-md);
     top: 70vh;
     left: 60vw;
 }
@@ -312,7 +304,7 @@
     font-family: var(--primary-font-ko);
     width: 265px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-rg);
     line-height: 1.4;
     top: 25vh;
     left: 37vw;
@@ -359,20 +351,18 @@
 .index-project5 h2,
 .index-project5 p {
     position: absolute;
-    color: #ffffff;
+    color: var(--color-w);
 }
 .index-project5 h1 {
-    font-family: var(--primary-font-en);
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     font-size: 75px;
     top: 52vh;
     left: 25vw;
 }
 .index-project5 h2 {
     width: 165px;
-    font-family: var(--primary-font-en);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--weight-md);
     top: 40vh;
     left: 53vw;
 }
@@ -380,7 +370,7 @@
     width: 265px;
     font-family: var(--primary-font-ko);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-rg);
     line-height: 1.4;
     top: 20vh;
     left: 40vw;
@@ -389,10 +379,9 @@
 /****** index-main-text ******/
 /*** 제목 + 텍스트 ***/
 .index-txt h1 {
-    font-family: var(--primary-font-en);
     font-size: 80px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: var(--weight-sb);
+    color: var(--color-w);
     position: absolute;
     top: 60vh;
     left: 32vw;
@@ -410,10 +399,9 @@
     text-align: center;
 }
 .index-txt h2 {
-    font-family: var(--primary-font-en);
     font-size: 80px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: var(--weight-sb);
+    color: var(--color-w);
     display: inline-block;
     perspective: 500px;
 
@@ -430,7 +418,7 @@
 
 /* class 이름 주의!!!!!!!! (step) */
 .flip .step {
-    font-weight: 600;
+    font-weight: var(--weight-sb);
     display: block;
     width: 100%;
     transition: transform 1.2s, opacity 0.3s;
@@ -451,9 +439,10 @@
 
 .index-txt p {
     width: 270px;
+    font-family: var(--primary-font-ko);
     font-size: 16px;
     line-height: 1.5;
-    color: #fff;
+    color: var(--color-w);
 
     position: absolute;
     top: 25vh;
