@@ -1,17 +1,5 @@
 @charset "utf-8";
 
-/* AppleSDNeo */
-@font-face {
-    font-family: 'AppleSDGothicNeoEB';
-    src: url('../works/files/artobodagallery/AppleSDGothicNeoEB.woff2') format('woff2');
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'AppleSDGothicNeoR';
-    src: url('../works/files/artobodagallery/AppleSDGothicNeoR.woff2') format('woff');
-    font-weight: normal;
-}
-
 body {
     color: var(--color-b);
     text-transform: capitalize;
@@ -174,23 +162,34 @@ body {
 }
 
 /***** fifeet-design *****/
+/*** title ***/
+.fifeet-design .design-title {
+    padding: 160px 0 0 70px;
+}
+.fifeet-design .design-title h3 {
+    padding-bottom: 50px;
+    font-weight: var(--weight-md);
+}
+.fifeet-design .design-title h2 {
+    width: 70%;
+    font-size: 35px;
+    font-weight: var(--weight-md);
+    line-height: 1.4;
+}
+
 /*** B.I ***/
 .fifeet-design .slider-container {
     width: 100%;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
-    cursor: grab;
 }
 .fifeet-design .slider-container .identity {
-    width: 400%;
-    padding-top: 250px;
+    width: 300%;
+    padding-top: 130px;
     display: flex;
     align-items: center;
-    cursor: grab;
+    /* cursor: grab; */
 
     animation: slide-left 60s infinite linear;
-    /* transition: transform 10s ease-in-out; */
-
 }
 @keyframes slide-left {
     0% {
@@ -200,6 +199,7 @@ body {
         transform: translateX(-100%); 
     }
 }
+
 .fifeet-design .slider-container .identity > div {
     /* min-width: 750px; */
     margin-right: 250px;
@@ -225,55 +225,26 @@ body {
     width: 650px;
 }
 
-
-
-/* 설명 */
-.fifeet-design .content .txt {
-    margin: 60px 0 0 360px;
-    flex: 1;
+/*** application ***/
+.fifeet-design .application {
+    /* width: 100%; */
+    padding: 250px 70px;
+    position: relative;
 }
-
-/*** 프로토타입 내용 ***/
-.fifeet-design .prototype {
-    padding: 130px 70px 0 410px;
-    display: flex;
+.fifeet-design .application img:first-of-type {
+    width: 80%;
 }
-.fifeet-design .prototype .txt1 h3 {
-    margin-bottom: 20px;
-    font-weight: var(--weight-md);
+.fifeet-design .application img:last-of-type {
+    width: 30%;
+    object-fit: cover;
+    position: absolute;
+    right: 70px;
+    bottom: -170px;
 }
-.fifeet-design .prototype .txt1 img {
-    padding-left: 20px;
-}
-.fifeet-design .prototype .txt1 p {
-    padding: 20px 0 0 10px;
-}
-.fifeet-design .prototype .txt2 {
-    margin-left: 20px;
-}
-.fifeet-design .prototype .txt2 > img {
-    padding: 45px 0 20px 0;
-}
-.fifeet-design .prototype .txt2 p {
-    font-size: 20px;
-}
-.fifeet-design .prototype .txt2 p span img {
-    padding-left: 10px;
-    animation: float 1.5s ease-in-out infinite;
-}
-@keyframes float {
-    0%, 100% {
-        transform: translateY(5px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
 
 /*** 리뷰 ***/
 .fifeet-design .review {
-    margin-top: 180px;
+    margin-top: 360px;
     padding: 100px 0 0 70px;
     display: flex;
 
