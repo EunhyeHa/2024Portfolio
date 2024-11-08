@@ -1,3 +1,12 @@
+## 241108 금 ##
+- index 작업
+  1) 메인 영상 작업 완료
+
+- global 작업
+  1) hidden-toggle 영역
+  - About me, 작업일지 썸네일 교체
+
+
 ## 241106 수 ##
 - Works 작업
   1) FIFEET 스크립트 수정.. 
