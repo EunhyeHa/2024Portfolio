@@ -34,7 +34,7 @@ body {
 .artbodamain .main-txt .txt3,
 .artbodamain .main-txt .txt4 {
     width: 20%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
@@ -69,7 +69,7 @@ body {
 }
 .artbodaoverview .overview-title h2 {
     width: 80%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-size: 50px;
     font-weight: var(--weight-md);
     line-height: 1.4;
@@ -79,7 +79,7 @@ body {
 .highlight {
     padding: 0 5px;
     position: relative;
-    color: #fff;
+    color: var(--color-w);
     display: inline-block;
     background-image: linear-gradient(to right, #0000c5 100%, transparent 0%);
     background-position: 0 100%;
@@ -176,7 +176,7 @@ body {
     width: 200px;
     margin: 0 60px 20px;
     padding: 10px 0 10px 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     background-color: #eeeeee;
     color: var(--color-b);
@@ -240,7 +240,7 @@ body {
 
 /* color */
 .artboda-prototype .content .typeColor .color {
-    font-family: 'poppins', sans-serif;
+    font-family: var(--primary-font-en);
     display: flex;
     flex-wrap: wrap;
     padding-top: 100px;
@@ -248,7 +248,7 @@ body {
 
 /* main */
 .artboda-prototype .content .typeColor .color .main {
-    font-family: 'pretendard', sans-serif;
+    font-family: var(--primary-font-ko);
     display: flex;
 }
 .artboda-prototype .content .typeColor .color h3 {
@@ -283,7 +283,7 @@ body {
 .artboda-prototype .content .typeColor .color .sub {
     width: 900px;
     height: 295px;
-    font-family: 'pretendard', sans-serif;
+    font-family: var(--primary-font-ko);
 
     padding-top: 60px;
     display: flex;
@@ -388,7 +388,7 @@ body {
 .artboda-prototype .review .txt ul {
     padding: 0 0 100px 175px;
     font-size: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     line-height: 1.5;
     list-style: inside;
 }

@@ -22,7 +22,7 @@ body {
 .fifeetmain .main-txt .txt3,
 .fifeetmain .main-txt .txt4 {
     width: 20%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
@@ -57,7 +57,7 @@ body {
 }
 .fifeetoverview .overview-title h2 {
     width: 80%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-size: 50px;
     font-weight: var(--weight-md);
     line-height: 1.4;
@@ -258,7 +258,7 @@ body {
 .fifeet-design .review .txt ul {
     padding: 0 0 100px 175px;
     font-size: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     line-height: 1.5;
     list-style: inside;
 }

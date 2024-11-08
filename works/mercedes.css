@@ -39,7 +39,7 @@ body {
 .benz-main .main-txt .txt3,
 .benz-main .main-txt .txt4 {
     width: 20%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
@@ -61,7 +61,7 @@ body {
     width: 100%;
     margin-top: 25px;
     padding: 100px;
-    background-color: #101010;
+    background-color: var(--color-b);
 
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ body {
 }
 .benz-overview .overview-title h2 {
     width: 80%;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-size: 50px;
     font-weight: var(--weight-md);
     line-height: 1.4;
@@ -93,7 +93,7 @@ body {
 .highlight {
     padding: 0 5px;
     position: relative;
-    color: #fff;
+    color: var(--color-w);
     display: inline-block;
     background-image: linear-gradient(to right, #2e2e2e 100%, transparent 0%);
     background-position: 0 100%;
@@ -172,7 +172,7 @@ body {
     width: 700px;
     height: 800px;
     padding: 200px 175px;
-    background-color: #101010;
+    background-color: var(--color-b);
 }
 .benz-publishing .design .keyword .keyword-box {
     width: 350px;
@@ -189,7 +189,7 @@ body {
     width: 200px;
     margin: 0 60px 20px;
     padding: 10px 0 10px 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     background-color: #e5e4e5;
     color: var(--color-b);
@@ -255,7 +255,7 @@ body {
 
 /* color */
 .benz-publishing .content .typeColor .color {
-    font-family: 'poppins', sans-serif;
+    font-family: var(--primary-font-en);
     display: flex;
     flex-wrap: wrap;
     padding-top: 70px;
@@ -295,7 +295,7 @@ body {
     color: var(--color-w);
 }
 .benz-publishing .content .typeColor .color .color4 {
-    background-color: #101010;
+    background-color: var(--color-b);
     color: var(--color-w);
 }
 
@@ -343,7 +343,7 @@ body {
 }
 .benz-publishing .publishing .txt1 p {
     padding-left: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-size: 20px;
     line-height: 1.8;
 }
@@ -372,7 +372,7 @@ body {
 .benz-publishing .problems .txt1 .list2 h4,
 .benz-publishing .problems .txt1 .list3 h4 {
     padding-left: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     font-size: 20px;
     line-height: 1.8;
@@ -415,7 +415,7 @@ body {
 .benz-publishing .review .txt ul {
     padding: 0 0 100px 175px;
     font-size: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primary-font-ko);
     line-height: 1.5;
     list-style: inside;
 }

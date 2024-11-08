@@ -27,7 +27,7 @@ body {
 .ader-main .main-txt .txt3,
 .ader-main .main-txt .txt4 {
     width: 20%;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
@@ -71,7 +71,7 @@ body {
 }
 .ader-overview .overview-title h2 {
     width: 80%;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     font-size: 50px;
     font-weight: var(--weight-md);
     line-height: 1.4;
@@ -167,7 +167,7 @@ body {
     width: 350px;
     height: 393px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--color-w)
     font-size: 20px;
 }
 .ader-publishing .design .keyword .keyword-box h3 {
@@ -178,7 +178,7 @@ body {
     width: 200px;
     margin: 0 60px 20px;
     padding: 10px 0 10px 20px;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     font-weight: var(--weight-sb);
     background-color: #f3f3f3;
     color: #0000c5;
@@ -245,7 +245,7 @@ body {
 .ader-publishing .content .typeColor .typeColor-box .type .ko .font,
 .ader-publishing .content .typeColor .typeColor-box .type .en .font {
     padding-left: 40px;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     line-height: 1.7;
     display: flex;
     flex-direction: column;
@@ -255,15 +255,15 @@ body {
 }
 .ader-publishing .content .typeColor .typeColor-box .type .en .font p:nth-child(2) {
     font-family: 'Jost', sans-serif;
-    font-weight: 500;
+    font-weight: var(--weight-md);
 }
 .ader-publishing .content .typeColor .typeColor-box .type .en .font p:nth-child(3) {
     font-family: 'Jost', sans-serif;
-    font-weight: 600;
+    font-weight: var(--weight-sb);
 }
 .ader-publishing .content .typeColor .typeColor-box .type .en .font p:nth-child(4) {
     font-family: 'Jost', sans-serif;
-    font-weight: 700;
+    font-weight: var(--weight-bo);
 }
 
 /* color */
@@ -326,7 +326,7 @@ body {
 }
 .ader-publishing .publishing .txt1 p {
     padding-left: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     font-size: 20px;
     line-height: 1.8;
 }
@@ -368,7 +368,7 @@ body {
     width: 90%;
     padding: 0 0 100px 175px;
     font-size: 20px;
-    font-family: 'pretendard';
+    font-family: var(--primaty-font-ko);
     line-height: 1.5;
     list-style: inside;
 }

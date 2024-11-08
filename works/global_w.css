@@ -146,7 +146,7 @@ z-index 모든 페이지에서 최상위에 오도록
 /********************** flip 시 색상 변경 **********************/
 .allPage-header .pc-main-nav .menu-wrapper .menu a.flipped .back {
   color: var(--color-w);
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: var(--color-lg);
   border: rgba(128, 128, 128, 0.1) solid 1px;
   border-radius: 30px;
   
@@ -331,12 +331,12 @@ z-index 모든 페이지에서 최상위에 오도록
 }
 
 .gray-text {
-  color: rgba(128, 128, 128, 0.5) !important;
+  color: var(--color-lg) !important;
 }
 
 .menu-main .menu-wrapper .menu-inner1 ul {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--weight-md);
   line-height: 1.8;
   letter-spacing: 0.5px;
   margin-bottom: 35px;
@@ -346,7 +346,7 @@ z-index 모든 페이지에서 최상위에 오도록
 
 .menu-main .menu-wrapper .menu-inner2 li {
   font-size: 15px;
-  color: #fff;
+  color: var(--color-w);
   display: flex;
   align-items: center;
 }
@@ -360,7 +360,7 @@ z-index 모든 페이지에서 최상위에 오도록
   text-align: left;
   letter-spacing: 0.5px;
   border: rgba(128, 128, 128, 0.1) solid 1px;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: var(--color-lg);
   border-radius: 30px;
 
   transition: 0.2s ease-in-out;
@@ -397,7 +397,7 @@ z-index 모든 페이지에서 최상위에 오도록
 /* 사이드 내부 스타일 */
 .menu-side .side-wrapper .side-inner1 {
   padding: 15px 20px 20px;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: var(--color-lg);
   border-radius: 10px;
 }
 
@@ -420,12 +420,12 @@ z-index 모든 페이지에서 최상위에 오도록
 .menu-side .side-wrapper .side-inner2 {
   margin-top: 10px;
   padding: 15px 20px 20px;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: var(--color-lg);
   border-radius: 10px;
 }
 
 .menu-side .side-wrapper .side-inner2 p {
-  color: #aaaaaa;
+  color: var(--color-g);
   margin-top: 5px;
 }
 
