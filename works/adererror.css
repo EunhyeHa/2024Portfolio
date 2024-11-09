@@ -27,7 +27,7 @@ body {
 .ader-main .main-txt .txt3,
 .ader-main .main-txt .txt4 {
     width: 20%;
-    font-family: var(--primaty-font-ko);
+    font-family: var(--primary-font-ko);
     font-weight: var(--weight-md);
     line-height: 1.5;
 }
