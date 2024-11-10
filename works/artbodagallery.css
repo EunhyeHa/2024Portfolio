@@ -349,6 +349,9 @@ body {
 .artboda-prototype .prototype .txt1 p {
     padding: 20px 0 0 10px;
 }
+.artboda-prototype .prototype .txt1 p > img {
+    width: 900px;
+}
 .artboda-prototype .prototype .txt2 {
     margin-left: 20px;
 }
