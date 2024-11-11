@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentImageClass = ''; // 현재 로드된 이미지 클래스
 
+    // menuLink 내용 변경
     menuLink.innerHTML = '<span class="front">menu</span><span class="back">close</span>';
 
     // 메뉴 링크 클릭 이벤트 처리
@@ -33,51 +34,55 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // 이미지 표시 레이어 추가
+    const imageLayer = document.createElement('img');
+    imageLayer.style.position = 'absolute';
+    imageLayer.style.top = '10%';
+    imageLayer.style.left = '30%';
+    imageLayer.style.width = '40%';
+    imageLayer.style.height = '80%';
+    imageLayer.style.objectFit = 'cover';
+    imageLayer.style.borderRadius = '10px';
+    imageLayer.style.opacity = '0';
+    imageLayer.style.transition = 'opacity 0.3s ease-in-out';
+    imageLayer.style.zIndex = '9992';
+    frameEffect.appendChild(imageLayer);
+
+
     // 메뉴 항목에 마우스 호버 이벤트 처리
     document.querySelectorAll('.menu-inner2 ul li:not(.works)').forEach(item => {
         item.addEventListener('mouseenter', function() {
-            const id = this.classList[0]; // 클래스명 가져오기
-            const imagePath = imagePaths[id]; // 이미지 경로 가져오기
+            const id = this.classList[0];
+            const imagePath = imagePaths[id];
 
             if (imagePath && currentImageClass !== id) {
-                const image = new Image();
-                image.src = imagePath;
-
-                image.onload = function() {
-                    frameEffect.innerHTML = ''; // 이전 이미지 제거
-                    
-                    frameEffect.appendChild(image); // 새 이미지 추가
-                    currentImageClass = id; // 현재 이미지 클래스 업데이트
-                };
-
-                image.onerror = function() {
-                    console.error(`이미지 로드 실패: ${imagePath}`);
-                };
+                imageLayer.src = imagePath;
+                imageLayer.style.opacity = '1'; // 이미지 보이기
+                currentImageClass = id;
             }
         });
 
         item.addEventListener('mouseleave', function() {
-            if (currentImageClass === this.classList[0]) {
-                frameEffect.innerHTML = ''; // 이미지 제거
-                currentImageClass = ''; // 현재 이미지 클래스 초기화
+            imageLayer.style.opacity = '0'; // 이미지 숨기기
+            currentImageClass = ''; 
+        });
+    });
+});
+
+
+// menu-inner1-underline hover
+const menuItems = document.querySelectorAll('.hover-underline-menu li');
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        menuItems.forEach(i => {
+            if (i !== item) {
+                i.querySelector('a').classList.add('gray-text');
             }
         });
     });
-
-    // menu-inner1-underline hover
-    const menuItems = document.querySelectorAll('.hover-underline-menu li');
-    menuItems.forEach(item => {
-        item.addEventListener('mouseover', () => {
-            menuItems.forEach(i => {
-                if (i !== item) {
-                    i.querySelector('a').classList.add('gray-text');
-                }
-            });
-        });
-        item.addEventListener('mouseout', () => {
-            menuItems.forEach(i => {
-                i.querySelector('a').classList.remove('gray-text');
-            });
+    item.addEventListener('mouseout', () => {
+        menuItems.forEach(i => {
+            i.querySelector('a').classList.remove('gray-text');
         });
     });
 });
