@@ -369,7 +369,7 @@ body {
     font-weight: var(--weight-md);
     letter-spacing: -1px;
     line-height: 1.2;
-    border-top: #101010 1px solid;
+    border-top: var(--color-b) 1px solid;
     overflow: hidden;
 
     position: relative;
@@ -383,7 +383,7 @@ body {
 .about-footer .footer-mail .mail {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 100s linear infinite;
+    animation: marquee 300s linear infinite;
 }
 @keyframes marquee {
     0%   { transform: translateX(0%); }
@@ -393,5 +393,6 @@ body {
 .about-footer .footer-mail .mail:hover {
     background-color: var(--color-main);
     color: #fff;
+    border-top: var(--color-main) 1px solid;
     animation-play-state: paused;
 }

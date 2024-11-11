@@ -72,7 +72,7 @@ z-index 모든 페이지에서 최상위에 오도록
   height: 80%;
   object-fit: cover;
   border-radius: 10px;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 .frame-effect.visible {
@@ -290,14 +290,14 @@ z-index 모든 페이지에서 최상위에 오도록
   display: block;
   margin-top: -5px;
   right: 0;
-  background: #fff;
+  background: var(--color-w);
   transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .hover-underline-menu li:hover a::after {
   width: 100%;
   left: 0;
-  background: #fff;
+  background: var(--color-w);
 }
 
 .gray-text {
@@ -312,6 +312,7 @@ z-index 모든 페이지에서 최상위에 오도록
   margin-bottom: 35px;
   display: inline-block;
   position: relative;
+  z-index: 99999;
 }
 
 .menu-main .menu-wrapper .menu-inner2 li {

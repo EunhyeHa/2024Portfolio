@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 image.onload = function() {
                     frameEffect.innerHTML = ''; // 이전 이미지 제거
+                    
                     frameEffect.appendChild(image); // 새 이미지 추가
                     currentImageClass = id; // 현재 이미지 클래스 업데이트
                 };

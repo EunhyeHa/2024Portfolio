@@ -8,7 +8,7 @@ slide.eq(currentIdx).addClass('show');
 setInterval(showNextSlide, 2000);
 
 function showNextSlide(){
-    let nextIdx = (currentIdx + 1) % slideCount;
+    let nextIdx = (currentIdx + 1)%slideCount;
     slide.eq(currentIdx).removeClass('show');
     slide.eq(nextIdx).addClass('show');
     currentIdx = nextIdx;
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     start: () => `top top+=${index * 150}vh`,
                     end: () => `top top+=${(index + 1) * 150}vh`,
                     scrub: true,
-                    markers: true,
+                    markers: false,
                     toggleActions: 'play none none reverse'
                 }
             }
