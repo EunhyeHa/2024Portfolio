@@ -390,9 +390,11 @@ body {
     100% { transform: translateX(-100%); }
 }
 
-.about-footer .footer-mail .mail:hover {
+.about-footer .footer-mail:hover {
     background-color: var(--color-main);
     color: #fff;
     border-top: var(--color-main) 1px solid;
+}
+.about-footer .footer-mail:hover .mail {
     animation-play-state: paused;
 }
