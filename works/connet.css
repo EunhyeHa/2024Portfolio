@@ -512,7 +512,6 @@ body {
     position: absolute;
     top: -17%;
     right: 13%;
-    transfo;
 
     animation: slideLeftRight 3s ease-in-out infinite;
 }

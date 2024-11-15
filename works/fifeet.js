@@ -4,7 +4,7 @@ let slideCount = slides.length;
 let slideWidth = slides[0].offsetWidth;
 
 // 반복
-const slideOrder = ['concept', 'icon', 'logo', 'icon', 'concept', 'icon', 'logo', 'icon', 'concept', 'icon'];
+const slideOrder = ['concept', 'icon', 'logo', 'insta', 'concept', 'icon', 'logo', 'insta', 'concept', 'icon', 'logo', 'insta'];
 
 // 슬라이드를 반복해서 순차적으로 나열하는 함수
 function reorderSlides() {
@@ -20,6 +20,8 @@ function reorderSlides() {
             div.innerHTML = `<img src="../assets/images/works/fifeet/design_icon.jpg" alt="design_icon">`;
         } else if (type === 'logo') {
             div.innerHTML = `<video src="../assets/images/works/fifeet/design_logo.mp4" muted autoplay loop></video>`;
+        } else if (type === 'insta') {
+            div.innerHTML = `<img src="../assets/images/works/fifeet/design_insta.jpg" alt="design_insta">`;
         }
         identity.appendChild(div);
     });

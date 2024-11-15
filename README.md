@@ -1,3 +1,11 @@
+## 241114 목 ##
+- fifeet, connet 상세페이지 수정
+  1) 관련 요소 추가
+  2) 이미지 슬라이드 수정
+
+## 241112 화 ##
+- fifeet, connet 상세페이지 수정
+
 ## 241111 월 ##
 - global
   1) hidden-toggle > works 메뉴 호버 이슈 해결 완료

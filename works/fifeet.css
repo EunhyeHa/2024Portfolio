@@ -207,7 +207,8 @@ body {
 }
 .fifeet-design .slider-container .identity .concept video,
 .fifeet-design .slider-container .identity .icon img,
-.fifeet-design .slider-container .identity .logo video {
+.fifeet-design .slider-container .identity .logo video,
+.fifeet-design .slider-container .identity .poster img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -224,6 +225,11 @@ body {
 .fifeet-design .slider-container .identity .logo video {
     width: 650px;
 }
+.fifeet-design .slider-container .identity .insta img {
+    width: 750px;
+    height: 595px;
+    object-fit: cover;
+}
 
 /*** application ***/
 .fifeet-design .application {
@@ -231,10 +237,18 @@ body {
     padding: 250px 70px;
     position: relative;
 }
-.fifeet-design .application img:first-of-type {
+.fifeet-design .application .poster {
+    display: flex;
+}
+.fifeet-design .application .poster img {
     width: 80%;
 }
-.fifeet-design .application img:last-of-type {
+.fifeet-design .application .poster p {
+    font-family: var(--primary-font-ko);
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.fifeet-design .application >img {
     width: 30%;
     object-fit: cover;
     position: absolute;
@@ -331,6 +345,7 @@ body {
     /* transform: scale(0.95); */
 }
 .next-project .thumbnail p {
+    font-size: 20px;
     padding: 30px 0 130px 0;
 }
 
