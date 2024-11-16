@@ -530,7 +530,7 @@ body {
 .connet-prototype .review .card1 img {
     width: 25%;
     position: absolute;
-    bottom: 16%;
+    bottom: 20%;
     right: -5%;
     transform: rotate(-18deg);
 }
