@@ -258,12 +258,13 @@ body {
 
 /*** 리뷰 ***/
 .fifeet-design .review {
-    margin-top: 360px;
+    margin-top: 500px;
     padding: 100px 0 0 70px;
     display: flex;
 
     background-color: var(--color-b);
     color: var(--color-w);
+    position: relative;
 }
 .fifeet-design .review h2 {
     font-size: 50px;
@@ -275,6 +276,31 @@ body {
     font-family: var(--primary-font-ko);
     line-height: 1.5;
     list-style: inside;
+}
+/* 추가 요소 */
+.fifeet-design .review .sticker img {
+    width: 27%;
+    position: absolute;
+    top: -28%;
+    right: 10%;
+
+    /* animation: slideLeftRight 3s ease-in-out infinite; */
+}
+.fifeet-design .review .rocket img {
+    width: 30%;
+    position: absolute;
+    bottom: 30%;
+    right: 3%;
+    transform: rotate(-18deg);
+    
+}
+.fifeet-design .review .bag img {
+    width: 20%;
+    position: absolute;
+    bottom: -62%;
+    left: 12%;
+    transform: rotate(7deg);
+    z-index: -1;
 }
 
 /*** 결과물 링크/파일 ***/
@@ -316,7 +342,7 @@ body {
 
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 100s linear infinite;
+    animation: marquee 300s linear infinite;
 }
 @keyframes marquee {
     0%   { transform: translateX(0%); }

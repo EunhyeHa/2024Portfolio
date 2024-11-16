@@ -435,7 +435,7 @@ body {
 
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 100s linear infinite;
+    animation: marquee 300s linear infinite;
 }
 @keyframes marquee {
     0%   { transform: translateX(0%); }
@@ -459,6 +459,7 @@ body {
 }
 .next-project .thumbnail p {
     padding: 30px 0 130px 0;
+    font-size: 20px;
 }
 
 /***** back-to-top *****/
