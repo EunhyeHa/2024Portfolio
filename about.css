@@ -268,15 +268,15 @@ body {
     width: 50%;
 }
 
-.about-skill .skill-list2 .skill-list2-1 li {
+.about-skill .skill-list2 .skill-list2-1 {
     box-sizing: border-box;
     height: 352px;
     border-left: #101010 1px solid;
 
     transition: 0.2s ease-in-out;
 }
-.about-skill .skill-list2 .skill-list2-1 li:hover,
-.about-skill .skill-list2 .skill-list2-2 li:hover {
+.about-skill .skill-list2 .skill-list2-1:hover,
+.about-skill .skill-list2 .skill-list2-2:hover {
     color: var(--color-main);
     border-left: var(--color-main) 1px solid;
 }
@@ -300,14 +300,14 @@ body {
 /* Tools */
 .about-skill .skill-list2 .skill-list2-2 {
     display: flex;
-    margin: 0 70px;
+    padding-right: 70px;
 }
 .about-skill .skill-list2 .skill-list2-toolsImg {
     width: 100%;
-    margin-left: 150px;
+    margin-left: 160px;
     justify-content: space-between;
 }
-.about-skill .skill-list2 .skill-list2-2 li {
+.about-skill .skill-list2 .skill-list2-2 {
     box-sizing: border-box;
     height: 352px;
     border-left: #101010 1px solid;
@@ -338,10 +338,10 @@ body {
     margin-left: 25px;
 }
 
-.about-skill .skill-list2 .skill-list2-2 .skill-list2-toolsImg li {
-    height: 40px;
+.about-skill .skill-list2 .skill-list2-2 .skill-list2-toolsImg div {
+    height: 13%;
     border: none;
-    margin: 10px 0 50px;
+    margin-bottom: 50px;
 
     display: flex;
     justify-content: space-between;
