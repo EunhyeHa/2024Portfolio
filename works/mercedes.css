@@ -399,6 +399,7 @@ body {
     border-radius: 10px;
 }
 
+/* 수정 필요.................. */
 /*** 리뷰 ***/
 .benz-publishing .review {
     margin-top: 180px;
@@ -412,12 +413,22 @@ body {
     font-size: 50px;
     font-weight: var(--weight-md);
 }
-.benz-publishing .review .txt ul {
-    padding: 0 0 100px 175px;
+.benz-publishing .review .txt {
+    width: 90%;
     font-size: 20px;
     font-family: var(--primary-font-ko);
+}
+.benz-publishing .review .txt h3 {
     line-height: 1.5;
-    list-style: inside;
+    padding: 0 0 0 175px;
+    font-weight: var(--weight-md);
+}
+.benz-publishing .review .txt p {
+    line-height: 1.5;
+    padding-left: 175px;
+}
+.benz-publishing .review .txt .last {
+    padding-bottom: 100px;
 }
 
 /*** 결과물 링크/파일 ***/

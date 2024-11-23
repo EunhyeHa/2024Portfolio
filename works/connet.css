@@ -483,7 +483,7 @@ body {
     }
 }
 
-
+/* 수정 필요.................. */
 /*** 리뷰 ***/
 .connet-prototype .review {
     margin-top: 180px;
@@ -492,18 +492,27 @@ body {
 
     background-color: var(--color-b);
     color: var(--color-w);
-    position: relative;
 }
 .connet-prototype .review h2 {
     font-size: 50px;
     font-weight: var(--weight-md);
 }
-.connet-prototype .review .txt ul {
-    padding: 0 0 100px 175px;
+.connet-prototype .review .txt {
+    width: 90%;
     font-size: 20px;
     font-family: var(--primary-font-ko);
+}
+.connet-prototype .review .txt h3 {
     line-height: 1.5;
-    list-style: inside;
+    padding: 0 0 0 175px;
+    font-weight: var(--weight-md);
+}
+.connet-prototype .review .txt p {
+    line-height: 1.5;
+    padding-left: 175px;
+}
+.connet-prototype .review .txt .last {
+    padding-bottom: 100px;
 }
 
 /* 추가 요소 */

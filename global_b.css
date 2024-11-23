@@ -5,14 +5,15 @@ body {
   position: relative;
 }
 
-/* menu 클릭시, 글자색 변경은
-menu -> css 코드 추가
-github, mail -> 스크립트 추가
+/* 
+  menu 클릭시, 글자색 변경은
+  menu -> css 코드 추가
+  github, mail -> 스크립트 추가
 */
 
 /* 
-z-index 모든 페이지에서 최상위에 오도록 
-단위: 9000, 9990,9991, 9999, 99999
+  z-index 모든 페이지에서 최상위에 오도록 
+  단위: 9000, 9990,9991, 9999, 99999
 */
 
 /*
@@ -272,7 +273,7 @@ z-index 모든 페이지에서 최상위에 오도록
 }
 
 /*** hidden-toggle ***/
-/****** menu-main ******/
+/***** menu-main *****/
 .menu-main {
     height: 100vh;
     padding: 0 70px;
@@ -371,7 +372,7 @@ z-index 모든 페이지에서 최상위에 오도록
   background-color: transparent;
 }
 
-/****** menu-side ******/
+/***** menu-side *****/
 .menu-side {
   width: 225px;
   margin: 0 70px;

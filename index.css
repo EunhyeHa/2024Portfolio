@@ -4,7 +4,7 @@
 }
 
 /* z-index : 1,2 사용 */
-/****** index-main ******/
+/***** index-main *****/
 .index-main {
     height: 100vh;
 
@@ -47,7 +47,7 @@
 }
 
 
-/****** index-project ******/
+/***** index-project *****/
 /*** project 1 - Adererror ***/
 .index-project1 {
     opacity: 0;
@@ -376,7 +376,7 @@
     left: 40vw;
 }
 
-/****** index-main-text ******/
+/***** index-main-text *****/
 /*** 제목 + 텍스트 ***/
 .index-txt h1 {
     font-size: 80px;

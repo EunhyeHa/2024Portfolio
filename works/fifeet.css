@@ -256,26 +256,36 @@ body {
     bottom: -170px;
 }
 
+/* 수정 필요.................. */
 /*** 리뷰 ***/
 .fifeet-design .review {
-    margin-top: 500px;
+    margin-top: 180px;
     padding: 100px 0 0 70px;
     display: flex;
 
     background-color: var(--color-b);
     color: var(--color-w);
-    position: relative;
 }
 .fifeet-design .review h2 {
     font-size: 50px;
     font-weight: var(--weight-md);
 }
-.fifeet-design .review .txt ul {
-    padding: 0 0 100px 175px;
+.fifeet-design .review .txt {
+    width: 90%;
     font-size: 20px;
     font-family: var(--primary-font-ko);
+}
+.fifeet-design .review .txt h3 {
     line-height: 1.5;
-    list-style: inside;
+    padding: 0 0 0 175px;
+    font-weight: var(--weight-md);
+}
+.fifeet-design .review .txt p {
+    line-height: 1.5;
+    padding-left: 175px;
+}
+.fifeet-design .review .txt .last {
+    padding-bottom: 100px;
 }
 /* 추가 요소 */
 .fifeet-design .review .sticker img {

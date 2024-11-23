@@ -374,7 +374,7 @@ body {
     }
 }
 
-
+/* 수정 필요.................. */
 /*** 리뷰 ***/
 .artboda-prototype .review {
     margin-top: 180px;
@@ -388,12 +388,22 @@ body {
     font-size: 50px;
     font-weight: var(--weight-md);
 }
-.artboda-prototype .review .txt ul {
-    padding: 0 0 100px 175px;
+.artboda-prototype .review .txt {
+    width: 90%;
     font-size: 20px;
     font-family: var(--primary-font-ko);
+}
+.artboda-prototype .review .txt h3 {
     line-height: 1.5;
-    list-style: inside;
+    padding: 0 0 0 175px;
+    font-weight: var(--weight-md);
+}
+.artboda-prototype .review .txt p {
+    line-height: 1.5;
+    padding-left: 175px;
+}
+.artboda-prototype .review .txt .last {
+    padding-bottom: 100px;
 }
 
 /*** 결과물 링크/파일 ***/
