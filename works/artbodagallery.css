@@ -352,13 +352,17 @@ body {
 .artboda-prototype .prototype .txt1 p > img {
     width: 900px;
 }
-.artboda-prototype .prototype .txt2 {
-    margin-left: 20px;
+
+.artboda-prototype .prototype .txt2 h3 {
+    color: transparent;
+    margin-bottom: 20px;
+    font-weight: var(--weight-md);
 }
 .artboda-prototype .prototype .txt2 > img {
-    padding: 45px 0 20px 0;
+    padding-left: 20px;
 }
 .artboda-prototype .prototype .txt2 p {
+    padding-left: 20px;
     font-size: 20px;
 }
 .artboda-prototype .prototype .txt2 p span img {
