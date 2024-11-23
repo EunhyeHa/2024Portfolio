@@ -492,6 +492,8 @@ body {
 
     background-color: var(--color-b);
     color: var(--color-w);
+
+    position: relative;
 }
 .connet-prototype .review h2 {
     font-size: 50px;
@@ -501,15 +503,17 @@ body {
     width: 90%;
     font-size: 20px;
     font-family: var(--primary-font-ko);
+    padding-left: 175px;
+}
+.connet-prototype .review .txt h3:first-of-type {
+    padding-top: 10px;
 }
 .connet-prototype .review .txt h3 {
     line-height: 1.5;
-    padding: 0 0 0 175px;
     font-weight: var(--weight-md);
 }
 .connet-prototype .review .txt p {
     line-height: 1.5;
-    padding-left: 175px;
 }
 .connet-prototype .review .txt .last {
     padding-bottom: 100px;
