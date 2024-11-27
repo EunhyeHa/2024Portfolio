@@ -468,16 +468,15 @@ body {
 
     position: absolute;
     z-index: -1;
-    overflow: hidden;
 
-    display: inline-block;
+    display: flex;
     white-space: nowrap;
-    animation: marquee 300s linear infinite;
+    /* animation: marquee 300s linear infinite; */
 }
-@keyframes marquee {
+/* @keyframes marquee {
     0%   { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
-}
+} */
 
 .next-project .thumbnail a {
     width: 600px;
