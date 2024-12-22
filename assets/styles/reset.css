@@ -3,10 +3,23 @@
   background: #0031e2;
   color: var(--color-w);
 }
-  ::selection {
+::selection {
   background-color: #0031e2;
   color: var(--color-w);
 }
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #0031e2;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-g);
+  box-shadow: 0 1px 10px var(--color-gray-80);
+}
+
 html,
 body,
 p,

@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // career-imgShowup
 let careerItems = document.querySelectorAll('.about-career .career-list p');
+
 careerItems.forEach(item => {
     let img = item.querySelector('span img');
     item.addEventListener('mouseover', function() {
