@@ -1,3 +1,6 @@
+## 241222 일 ##
+- scroll-behavior 수정
+
 ## 2411226-27 화-수 ##
 - 유효성 Test 재검토 ing..
 - Works 수정
